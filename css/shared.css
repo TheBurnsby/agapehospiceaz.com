@@ -1,0 +1,895 @@
+/* --------------------------------------------GENERAL CONTENT */
+/*
+#6d387a; agape purple
+#666699; agape blue
+#738445; Agape green
+
+*/
+
+body {}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "serenity", sans-serif;
+	color: #6d387a;
+}
+
+
+h1 {
+	font-size: 2.8rem;
+	font-weight: 100;
+}
+
+h2 {
+	font-size: 2.2rem;
+	font-weight: 700;
+}
+h3 {
+	font-size: 1.9rem;
+	font-weight: 300;
+	color: #6d387a;
+}
+
+h5{
+	color: #fff;
+	font-weight: 700;
+	text-shadow: 1px 1px #333;
+}
+
+p {
+	font-family: "serenity", sans-serif;
+	font-weight: 300;
+	font-size: 1.2rem;
+	line-height: 1.375rem;
+	margin-bottom: 1em;
+}
+ul, ol {
+	font-family: "serenity", sans-serif;
+	font-weight: 300;
+	font-size: 1.2rem;
+	line-height: 1.375rem;
+
+}
+a, a:link, a:visited, a:focus, a:hover {
+	color: #6d387a;
+	text-decoration: none;
+	font-size: 1.2rem;
+	outline: none;
+}
+
+.button:focus {
+	outline: none;
+}
+
+.button.purple{
+	background-color: #6d387a;
+}
+.button.purple:hover{
+	background-color: #fff;
+	border: 1px solid #6d387a;
+	border-radius: 2px;
+	color: #6d387a;
+}
+.button.hpurple{
+	background-color: transparent;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	color: #fff;
+}
+.button.hpurple:hover{
+	background-color: #6d387a;
+	color: #fff;
+	border-radius: 0px;
+}
+a:hover {
+	cursor: pointer;
+}
+blockquote{
+	color: #fff;
+}
+cite{
+	color: #e1e1e1;
+}
+
+
+body {
+
+}
+
+.top{
+	height: 3rem;
+	width: 100%;
+	background-color: #fafafa;
+}
+
+.top-contact a{
+	font-size: .8rem;
+	color: #555555;
+}
+
+.top .social-icons{
+	font-size: 1rem;
+	max-width: 12.6rem;
+	width: 100%;
+	padding-top: 10px;
+}
+.icon {
+	display: inline;
+	font-size: 1.3rem;
+	padding: 10px;
+}
+
+.icon.facebook {
+	background-color: #fafafa;
+	  -webkit-transition: background-color 0.25s ease-out;
+	  -moz-transition: background-color 0.25s ease-out;
+	  -o-transition: background-color 0.25s ease-out;
+	  transition: background-color 0.25s ease-out;
+}
+.icon.google {
+	background-color: #fafafa;
+	  -webkit-transition: background-color 0.25s ease-out;
+	  -moz-transition: background-color 0.25s ease-out;
+	  -o-transition: background-color 0.25s ease-out;
+	  transition: background-color 0.25s ease-out;
+}
+.icon.linkedin {
+	background-color: #fafafa;
+	  -webkit-transition: background-color 0.25s ease-out;
+	  -moz-transition: background-color 0.25s ease-out;
+	  -o-transition: background-color 0.25s ease-out;
+	  transition: background-color 0.25s ease-out;
+}
+.icon.facebook:hover {
+	background-color: #3b5998;
+	color: #fff;
+}
+.icon.google:hover {
+	background-color: #dd4b39;
+	color: #fff;
+}
+.icon.linkedin:hover {
+	background-color: #007bb5;
+	color: #fff;
+}
+.main-menu{
+	padding: 5px 0 5px .9375rem;
+	height: 125px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.7);
+	display: none;
+}
+.home-menu{
+	padding: 5px 0 5px .9375rem;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 125px;
+	width: 100%;
+}
+.menu-bar{
+	padding-top: 40px;
+	float: right;
+}
+.menu-bar a{
+	font-family: "serenity", sans-serif;
+	font-weight: 300;
+	color: #000;
+	font-size: 1.2rem;
+}
+.menu-bar a:hover, a:active, a:focus{
+	color: #6d387a;
+	transition: background-color 0.25s ease-in, color 0.25s ease-out;
+}
+.mobile-menu-canvas {
+	background-color: #fff;
+	padding: 10px;
+}
+.mobile-menu-canvas a{
+	color: #000;
+}
+.mobile-menu-canvas a:hover, a:active, a:focus{
+	color: #6d387a;
+	transition: background-color 0.25s ease-in, color 0.25s ease-out;
+}
+
+.mobile-icon {
+	color: #fff;
+	font-size: 2rem;
+	padding: 30px;
+	background-color: #6d387a;
+}
+.mobile-icon:hover {
+	color: #6d387a;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 2px solid #6d387a;
+	transition: background-color 0.25s ease-in, color 0.25s ease-out;
+}
+
+.center{
+	position: relative;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -10%);
+}
+.center .circle-icon{
+	border: .6rem solid #845091;
+	border-radius: 100%;
+	height: 10rem;
+	width: 10rem;
+	margin: 2rem auto;
+	background-color: #ece5ee;
+}
+.center .circle-icon:hover{
+	transition: background-color 0.25s ease-in, color 0.25s ease-out;
+	border-color: #d3c5d6;
+	background-color: #fff;
+
+}
+.circle-icon img{
+	position: relative;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+.center .button{
+	position: relative;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+.classy{
+	position: relative;
+}
+.slide1{
+	text-align: center;
+}
+
+.classy-text {
+	position: absolute;
+	left: 50%;
+
+}
+.classy-text h1{
+	font-size: 4rem;
+}
+
+.testimonial .slide-text{
+	text-align: center;
+	padding-top: 100px;
+}
+.slide-text p{
+	font-size: 1.6rem;
+	color: #fff;
+	text-shadow: 1px 2px #333;
+}
+
+.container{
+
+}
+
+.callout.primary{
+	border: none;
+	border-radius: 10px;
+	background-color: #eef1f1;
+	height: 450px;
+}
+
+.agape-who{
+
+	text-align: center;
+}
+
+.agape-who .columns{
+	padding-left: .3rem;
+	padding-right: .3rem;}
+
+.agape-who h3{
+	color: #6d387a;
+}
+.agape-who hr{
+	color: #6d387a;
+	width: 75px;
+}
+
+.circle-icon{
+	border-radius: 100%;
+	border: 3px solid #e9eaea;
+	background-color: #fff;
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+}
+
+.agape-who i{
+	color: #6d387a;
+	position: relative;
+	top: 28px;
+
+}
+
+.bg-image{
+
+	height: 350px;
+	width: 100%;
+	background: url("http://www.agapehospiceaz.com/images/testimonials.jpg");
+}
+
+.foot-section{
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:6d387a,co_rgb:fff,o_19/v1460846020/Arizona-High-Resolution-Wallpapers_effoty.jpg') no-repeat fixed;
+	color: #fff;
+	text-align: center;
+	padding: 25px;
+}
+
+.foot-section h3{
+	color: #fff;
+}
+
+.aln{
+	height: 80px;
+	width: 200px;
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463443793/agape/aln-no-hover.png')no-repeat center;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.aln:hover{
+	background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463436855/agape/ALN-Hover.png") no-repeat center;
+	transition: background ease-out 0.5s;
+}
+
+.joint-commission {
+	height: 120px;
+	width: 120px;
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_120/v1463443991/agape/JCNQA-no-hover.png') no-repeat center;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+
+}
+.joint-commission:hover {
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_120/v1456786992/agape/JCNQA_logo.png') no-repeat center;
+	transition: background ease-out 0.5s;
+}
+
+.mcc {
+	height: 94px;
+	width: 200px;
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463443643/agape/MCC-no-hover.png') no-repeat center;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+
+}
+.mcc:hover {
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463444242/agape/MCC-hover.png') no-repeat center;
+	transition: background ease-out 0.5s;
+}
+
+.veterans {
+	height: 50px;
+	width: 255px;
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,h_50/v1463443921/agape/veterans-no-hover.png') no-repeat center;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+
+}
+.veterans:hover {
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,h_50/v1456786990/agape/veterans.png') no-repeat center;
+	transition: background ease-out 0.5s;
+}
+
+/*Care Team Page */
+
+.staff-title{
+	background: #6d387a;
+	padding: 10px;
+	color: #fff;
+}
+
+.bio .button{
+	background: #7e8b57;
+	width: 100%;
+}
+.staff-title h4{
+		color: #fff;
+	}
+
+.head-bg{
+	height: 500px;
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:6d387a,bo_1px_solid_rgb:fff,o_45/v1446919520/arizona_nature3_yg71aa.png') no-repeat center;
+	width: 100%;
+	color: #fff;
+	border-bottom: 15px solid #6d387a;
+}
+.head-text{
+	text-align: center;
+	padding-top: 70px;
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.head-text h1{
+	color: #fff;
+}
+
+.care-team{
+	padding-top: 25px;
+}
+.arrow{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	height: 0;
+	width: 0;
+	border-top: 20px solid #6d387a; /*agape purple*/
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+}
+
+/*Volunteer Page*/
+.volunteer-container {
+	padding-top: 25px;
+}
+.volunteer-wrap{
+	background-color: #ededf6;
+	padding: 25px;
+}
+
+.volunteer-wrap img{
+	max-width: 100%;
+}
+.head-bg.volunteer{
+	height: 400px;
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:669,o_46/v1456785666/agape/agape_home_slider.jpg') no-repeat center;
+	width: 100%;
+	color: #fff;
+	border-bottom: 15px solid #666699; /*agape blue*/
+}
+
+.arrow.volunteer{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	height: 0;
+	width: 0;
+	border-top: 20px solid #666699;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+}
+
+/*Contact Us*/
+
+.head-bg.contact{
+	height: 400px;
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:7e8b57,c_fill,g_north,h_500,o_48,w_1920/v1460846020/Arizona-High-Resolution-Wallpapers_effoty.jpg') no-repeat center;
+	width: 100%;
+	color: #fff;
+	border-bottom: 15px solid #7e8b57; /*agape green*/
+}
+.arrow.contact{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	height: 0;
+	width: 0;
+	border-top: 20px solid #7e8b57;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+}
+/*.agape-life{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	width: 100%;
+	text-align: center;
+}
+.agape-life .image{
+	display: inline;
+	padding: none;
+}*/
+#fade-title{
+	display: none;
+}
+
+.reveal:focus{
+	outline: none;
+}
+
+.profile-circle.nurse{
+	border-radius: 50%;
+	border: solid 5px #7e8b57;
+	height: 150px;
+	width: 150px;
+	float: right;
+	background:url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_500,w_500/v1469574986/agape/MicahRumel.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.profile-circle.bereavement{
+	border-radius: 50%;
+	border: solid 5px #7e8b57;
+	height: 150px;
+	width: 150px;
+	float: right;
+	background:url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_faces,h_500,w_500/v1464983424/agape/Profile%20Pictures/BelindaBrauer.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.profile-circle.physician{
+	border-radius: 50%;
+	border: solid 5px #7e8b57;
+	height: 150px;
+	width: 150px;
+	float: right;
+	background:url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_500/v1464980783/agape/Profile%20Pictures/JoelMoncivaiz.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.profile-circle.social-service{
+	border-radius: 50%;
+	border: solid 5px #7e8b57;
+	height: 150px;
+	width: 150px;
+	float: right;
+	background:url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_500/v1464980784/agape/Profile%20Pictures/KatPerkins.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.profile-circle.volunteer{
+	border-radius: 50%;
+	border: solid 5px #7e8b57;
+	height: 150px;
+	width: 150px;
+	float: right;
+	background:url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,e_brightness:20,g_face,h_300,w_300/v1456786991/agape/administrative-volunteer.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.profile-circle.cna{
+	border-radius: 50%;
+	border: solid 5px #7e8b57;
+	height: 150px;
+	width: 150px;
+	float: right;
+	background:url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_500/v1469574864/agape/RosaToscano.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+/*CARE TEAM PROFILES*/
+
+.profile-circle.tammy {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face:center,h_933,w_933/v1464980789/agape/Profile%20Pictures/TammyBurns.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.sam {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1466196957/agape/Profile%20Pictures/SamBurns.png");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.zach {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_faces,h_933,w_933/v1470345871/agape/ZachMcClain.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.jon {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,h_933,w_933/v1464980791/agape/Profile%20Pictures/JonBurns.png");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.russell {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,h_933,w_933/v1464980788/agape/Profile%20Pictures/Russell_Burns.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.ron-z {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1471018979/agape/Image_7638_v2.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.ron {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,e_brightness:10,g_face,h_933,w_933/v1464980790/agape/Profile%20Pictures/RonSable.png");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.otto {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1470081721/agape/OttoBohon.png");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.stephan {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face:center,h_731,w_731/v1470941610/agape/Picture1.png");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.april {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980782/agape/Profile%20Pictures/AprilRosa.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.joel {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980783/agape/Profile%20Pictures/JoelMoncivaiz.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.kim {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980783/agape/Profile%20Pictures/KimHenry.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.jody {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980781/agape/Profile%20Pictures/JodyAgins.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.dana {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980781/agape/Profile%20Pictures/DanaEvans.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.crystal {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980781/agape/Profile%20Pictures/CrystalThrall.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.lorraine {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980786/agape/Profile%20Pictures/LorraineMoon.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.kat {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980784/agape/Profile%20Pictures/KatPerkins.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.belinda {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464983424/agape/Profile%20Pictures/BelindaBrauer.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.gary {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980786/agape/Profile%20Pictures/GaryHenry.png");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.catherine {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1470081982/agape/CatherineVaughan.png");
+  background-size: cover;
+  background-position: center; }
+
+.profile-circle.sven {
+  border-radius: 50%;
+  border: solid 5px #7e8b57;
+  height: 75px;
+  width: 75px;
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1470081981/agape/SvenOlson.png");
+  background-size: cover;
+  background-position: center; }
+
+/*# sourceMappingURL=converted.css.map */
+
+.how-we-do-small{
+	padding-top: 25px;
+	text-align: center;
+}
+
+
+.how-we-do{
+	padding-top: 25px;
+}
+
+.block-left{
+	text-align: right;
+}
+.block-right{
+	text-align: left;
+}
+
+.block-middle{
+	text-align: center;
+}
+
+/*How We Do*/
+.how-we-do-foot{
+	text-align: center;
+}
+table {
+	font-size: 12px;
+}
+.buttons-back {
+	display: inline-block;
+}
+
+.bottom-foot {
+	width: 100%;
+	height: 75px;
+	background-color: #fafafa;
+	padding: 25px;
+}
+
+.bottom-foot p{
+	font-size: 12px;
+}
+.bottom-foot a{
+	font-size: 12px;
+}
+
+
+/* Small screens  */
+@media only screen and (max-width: 640px) {
+	.arrow.contact{
+	left: 50%;
+	}
+
+	h4 {
+		font-size: 1.6rem;
+	}
+	.profile-circle.bereavement {
+		float: none;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.profile-circle.cna {
+		float: none;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.profile-circle.social-service {
+		float: none;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.profile-circle.physician {
+		float: none;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.profile-circle.nurse {
+		float: none;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.profile-circle.volunteer {
+		float: none;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+}
+
+/* Medium screens */
+@media only screen and (max-width: 1024px) {
+	.profile-circle.bereavement {
+		float: none;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.profile-circle.cna {
+		float: none;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.profile-circle.social-service {
+		float: none;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.profile-circle.physician {
+		float: none;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.profile-circle.nurse {
+		float: none;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.profile-circle.volunteer {
+		float: none;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+}
+
+/* Large screens */
+@media only screen and (min-width: 1025px) { }
