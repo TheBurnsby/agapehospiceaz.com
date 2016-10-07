@@ -1,12 +1,9 @@
 $(document).ready(function(){
 
-	$(".main-menu").delay("500").fadeIn("slow");
+	// $(".main-menu").delay("500").fadeIn("slow");
 	$("#fade-title").delay("700").fadeIn("slow");
 	// Slider jQuery
-	$('.classy').slick({
-		slidesToShow: 1,
-		// autoplay: true,
-	});
+	$('.number-box').delay('700').fadeIn('slow');
 	//
 	$('.sliderA').slick({
 		dots: true,

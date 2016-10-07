@@ -8,51 +8,44 @@
 
 body {}
 h1, h2, h3, h4, h5, h6 {
-	font-family: "serenity", sans-serif;
 	color: #6d387a;
+	font-family: "serenity", sans-serif;
 }
-
-
 h1 {
-	font-size: 2.8rem;
 	font-weight: 100;
+	font-size: 2.8rem;
 }
-
 h2 {
-	font-size: 2.2rem;
 	font-weight: 700;
+	font-size: 2.2rem;
 }
 h3 {
-	font-size: 1.9rem;
-	font-weight: 300;
 	color: #6d387a;
+	font-weight: 300;
+	font-size: 1.9rem;
 }
-
 h5{
 	color: #fff;
 	font-weight: 700;
 	text-shadow: 1px 1px #333;
 }
-
 p {
-	font-family: "serenity", sans-serif;
 	font-weight: 300;
 	font-size: 1.2rem;
-	line-height: 1.375rem;
 	margin-bottom: 1em;
+	line-height: 1.375rem;
+	font-family: "serenity", sans-serif;
 }
 ul, ol {
-	font-family: "serenity", sans-serif;
 	font-weight: 300;
 	font-size: 1.2rem;
 	line-height: 1.375rem;
-
+	font-family: "serenity", sans-serif;
 }
 a, a:link, a:visited, a:focus, a:hover {
+	outline: none;
 	color: #6d387a;
 	text-decoration: none;
-	font-size: 1.2rem;
-	outline: none;
 }
 /*Menu Bar*/
 nav {
@@ -90,21 +83,21 @@ nav {
 	background-color: #6d387a;
 }
 .button.purple:hover{
+	color: #6d387a;
+	border-radius: 2px;
 	background-color: #fff;
 	border: 1px solid #6d387a;
-	border-radius: 2px;
-	color: #6d387a;
 }
 .button.hpurple{
-	background-color: transparent;
-	border: 1px solid #fff;
-	border-radius: 2px;
 	color: #fff;
+	border-radius: 2px;
+	border: 1px solid #fff;
+	background-color: transparent;
 }
 .button.hpurple:hover{
-	background-color: #6d387a;
 	color: #fff;
 	border-radius: 0px;
+	background-color: #6d387a;
 }
 a:hover {
 	cursor: pointer;
@@ -115,35 +108,29 @@ blockquote{
 cite{
 	color: #e1e1e1;
 }
-
-
-body {
-
-}
-
 .top{
-	height: 3rem;
 	width: 100%;
+	height: 3rem;
 	background-color: #fafafa;
 }
-
-.top-contact a{
-	font-size: .8rem;
-	color: #555555;
-}
-
-.top .social-icons{
-	font-size: 1rem;
-	max-width: 12.6rem;
-	width: 100%;
+.top-contact {
 	padding-top: 10px;
 }
+.top-contact a{
+	color: #555555;
+	font-size: .8rem;
+}
+.top .social-icons{
+	width: 100%;
+	font-size: 1rem;
+	padding-top: 10px;
+	max-width: 12.6rem;
+}
 .icon {
+	padding: 10px;
 	display: inline;
 	font-size: 1.3rem;
-	padding: 10px;
 }
-
 .icon.facebook {
 	background-color: #fafafa;
 	  -webkit-transition: background-color 0.25s ease-out;
@@ -178,11 +165,10 @@ body {
 	color: #fff;
 }
 .main-menu{
-	padding: 5px 0 5px .9375rem;
-	height: 125px;
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.7);
-	display: none;
+	height: 125px;
+	padding: 5px 0 5px .9375rem;
+	background-color: rgb(255, 255, 255);
 }
 .home-menu{
 	padding: 5px 0 5px .9375rem;
@@ -192,8 +178,8 @@ body {
 	width: 100%;
 }
 .menu-bar{
-	padding-top: 40px;
 	float: right;
+	padding-top: 40px;
 }
 
 /*.menu-bar a{
@@ -238,78 +224,70 @@ body {
 	transform: translate(-50%, -10%);
 }
 .center .circle-icon{
-	border: .6rem solid #845091;
-	border-radius: 100%;
-	height: 10rem;
 	width: 10rem;
+	height: 10rem;
 	margin: 2rem auto;
+	border-radius: 100%;
 	background-color: #ece5ee;
+	border: .6rem solid #845091;
 }
 .center .circle-icon:hover{
-	transition: background-color 0.25s ease-in, color 0.25s ease-out;
 	border-color: #d3c5d6;
 	background-color: #fff;
-
+	transition: background-color 0.25s ease-in, color 0.25s ease-out;
 }
 .circle-icon img{
-	position: relative;
 	top: 50%;
 	left:50%;
+	position: relative;
 	transform: translate(-50%, -50%);
 }
 .center .button{
-	position: relative;
 	top: 50%;
 	left:50%;
+	position: relative;
 	transform: translate(-50%, -50%);
 }
-
 .classy{
 	position: relative;
 }
-.slide1{
+.number-box {
+	left: 76%;
+	padding:15px;
+	display: none;
 	text-align: center;
-}
-
-.classy-text {
 	position: absolute;
-	left: 50%;
-
-}
-.classy-text h1{
-	font-size: 4rem;
+	border-radius: 0 0 4px 4px;
+	background: rgba(255,255,255,0.6);
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
 }
 
+.number-box p, .number-box h3 {
+	margin-bottom: 0;
+	font-weight: 700;
+}
 .testimonial .slide-text{
 	text-align: center;
 	padding-top: 100px;
 }
 .slide-text p{
-	font-size: 1.6rem;
 	color: #fff;
+	font-size: 1.6rem;
 	text-shadow: 1px 2px #333;
 }
-
-.container{
-
-}
-
 .callout.primary{
 	border: none;
+	height: 450px;
 	border-radius: 10px;
 	background-color: #eef1f1;
-	height: 450px;
 }
-
 .agape-who{
-
 	text-align: center;
 }
-
 .agape-who .columns{
 	padding-left: .3rem;
-	padding-right: .3rem;}
-
+	padding-right: .3rem;
+}
 .agape-who h3{
 	color: #6d387a;
 }
@@ -317,191 +295,172 @@ body {
 	color: #6d387a;
 	width: 75px;
 }
-
 .circle-icon{
-	border-radius: 100%;
-	border: 3px solid #e9eaea;
-	background-color: #fff;
 	height: 100px;
 	width: 100px;
 	margin: 0 auto;
+	border-radius: 100%;
+	background-color: #fff;
+	border: 3px solid #e9eaea;
 }
-
 .agape-who i{
+	top: 28px;
 	color: #6d387a;
 	position: relative;
-	top: 28px;
-
 }
-
 .bg-image{
-
-	height: 350px;
 	width: 100%;
+	height: 350px;
 	background: url("http://www.agapehospiceaz.com/images/testimonials.jpg");
 }
-
 .foot-section{
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:6d387a,co_rgb:fff,o_19/v1460846020/Arizona-High-Resolution-Wallpapers_effoty.jpg') no-repeat fixed;
 	color: #fff;
-	text-align: center;
 	padding: 25px;
+	text-align: center;
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:6d387a,co_rgb:fff,o_19/v1460846020/Arizona-High-Resolution-Wallpapers_effoty.jpg') no-repeat fixed;
 }
-
 .foot-section h3{
 	color: #fff;
 }
-
 .aln{
+	left: 50%;
 	height: 80px;
 	width: 200px;
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463443793/agape/aln-no-hover.png')no-repeat center;
 	position: relative;
-	left: 50%;
 	transform: translate(-50%);
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463443793/agape/aln-no-hover.png')no-repeat center;
 }
 
 .aln:hover{
-	background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463436855/agape/ALN-Hover.png") no-repeat center;
 	transition: background ease-out 0.5s;
+	background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463436855/agape/ALN-Hover.png") no-repeat center;
 }
 
 .joint-commission {
-	height: 120px;
-	width: 120px;
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_120/v1463443991/agape/JCNQA-no-hover.png') no-repeat center;
-	position: relative;
 	left: 50%;
+	width: 120px;
+	height: 120px;
+	position: relative;
 	transform: translate(-50%);
-
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_120/v1463443991/agape/JCNQA-no-hover.png') no-repeat center;
 }
 .joint-commission:hover {
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_120/v1456786992/agape/JCNQA_logo.png') no-repeat center;
 	transition: background ease-out 0.5s;
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_120/v1456786992/agape/JCNQA_logo.png') no-repeat center;
 }
 
 .mcc {
+	left: 50%;
 	height: 94px;
 	width: 200px;
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463443643/agape/MCC-no-hover.png') no-repeat center;
 	position: relative;
-	left: 50%;
 	transform: translate(-50%);
-
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463443643/agape/MCC-no-hover.png') no-repeat center;
 }
 .mcc:hover {
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463444242/agape/MCC-hover.png') no-repeat center;
 	transition: background ease-out 0.5s;
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463444242/agape/MCC-hover.png') no-repeat center;
 }
 
 .veterans {
+	left: 50%;
 	height: 50px;
 	width: 255px;
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,h_50/v1463443921/agape/veterans-no-hover.png') no-repeat center;
 	position: relative;
-	left: 50%;
 	transform: translate(-50%);
-
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,h_50/v1463443921/agape/veterans-no-hover.png') no-repeat center;
 }
 .veterans:hover {
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,h_50/v1456786990/agape/veterans.png') no-repeat center;
 	transition: background ease-out 0.5s;
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,h_50/v1456786990/agape/veterans.png') no-repeat center;
 }
 
 /*Care Team Page */
 
 .staff-title{
-	background: #6d387a;
-	padding: 10px;
 	color: #fff;
+	padding: 10px;
+	background: #6d387a;
 }
-
 .bio .button{
-	background: #7e8b57;
 	width: 100%;
+	background: #7e8b57;
 }
 .staff-title h4{
-		color: #fff;
-	}
-
+	color: #fff;
+}
 .head-bg{
-	height: 500px;
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:6d387a,bo_1px_solid_rgb:fff,o_45/v1446919520/arizona_nature3_yg71aa.png') no-repeat center;
 	width: 100%;
 	color: #fff;
+	height: 500px;
 	border-bottom: 15px solid #6d387a;
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:6d387a,bo_1px_solid_rgb:fff,o_45/v1446919520/arizona_nature3_yg71aa.png') no-repeat center;
 }
 .head-text{
-	text-align: center;
 	padding-top: 70px;
 	max-width: 1000px;
-	margin-right: auto;
 	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 .head-text h1{
 	color: #fff;
 }
-
 .care-team{
 	padding-top: 25px;
 }
 .arrow{
-	position: relative;
-	left: 50%;
-	transform: translate(-50%);
-	height: 0;
 	width: 0;
+	left: 50%;
+	height: 0;
+	position: relative;
+	transform: translate(-50%);
 	border-top: 20px solid #6d387a; /*agape purple*/
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
 }
-
 /*Volunteer Page*/
 .volunteer-container {
 	padding-top: 25px;
 }
 .volunteer-wrap{
-	background-color: #ededf6;
 	padding: 25px;
+	background-color: #ededf6;
 }
-
 .volunteer-wrap img{
 	max-width: 100%;
 }
 .head-bg.volunteer{
-	height: 400px;
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:669,o_46/v1456785666/agape/agape_home_slider.jpg') no-repeat center;
 	width: 100%;
 	color: #fff;
+	height: 400px;
 	border-bottom: 15px solid #666699; /*agape blue*/
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:669,o_46/v1456785666/agape/agape_home_slider.jpg') no-repeat center;
 }
-
 .arrow.volunteer{
-	position: relative;
 	left: 50%;
-	transform: translate(-50%);
 	height: 0;
 	width: 0;
+	position: relative;
+	transform: translate(-50%);
 	border-top: 20px solid #666699;
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
 }
-
 /*Contact Us*/
-
 .head-bg.contact{
-	height: 400px;
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:7e8b57,c_fill,g_north,h_500,o_48,w_1920/v1460846020/Arizona-High-Resolution-Wallpapers_effoty.jpg') no-repeat center;
 	width: 100%;
 	color: #fff;
+	height: 400px;
 	border-bottom: 15px solid #7e8b57; /*agape green*/
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:7e8b57,c_fill,g_north,h_500,o_48,w_1920/v1460846020/Arizona-High-Resolution-Wallpapers_effoty.jpg') no-repeat center;
 }
 .arrow.contact{
-	position: relative;
 	left: 50%;
-	transform: translate(-50%);
 	height: 0;
 	width: 0;
+	position: relative;
+	transform: translate(-50%);
 	border-top: 20px solid #7e8b57;
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
@@ -526,25 +485,25 @@ body {
 }
 
 .profile-circle.nurse{
-	border-radius: 50%;
-	border: solid 5px #7e8b57;
 	height: 150px;
 	width: 150px;
 	float: right;
-	background:url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_500,w_500/v1469574986/agape/MicahRumel.jpg');
+	border-radius: 50%;
 	background-size: cover;
+	border: solid 5px #7e8b57;
 	background-position: center;
+	background:url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_500,w_500/v1469574986/agape/MicahRumel.jpg');
 }
 
 .profile-circle.bereavement{
-	border-radius: 50%;
-	border: solid 5px #7e8b57;
 	height: 150px;
 	width: 150px;
 	float: right;
-	background:url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_faces,h_500,w_500/v1464983424/agape/Profile%20Pictures/BelindaBrauer.jpg');
+	border-radius: 50%;
 	background-size: cover;
+	border: solid 5px #7e8b57;
 	background-position: center;
+	background:url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_faces,h_500,w_500/v1464983424/agape/Profile%20Pictures/BelindaBrauer.jpg');
 }
 
 .profile-circle.physician{
@@ -559,35 +518,34 @@ body {
 }
 
 .profile-circle.social-service{
-	border-radius: 50%;
-	border: solid 5px #7e8b57;
 	height: 150px;
 	width: 150px;
 	float: right;
-	background:url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_500/v1464980784/agape/Profile%20Pictures/KatPerkins.jpg');
+	border-radius: 50%;
 	background-size: cover;
+	border: solid 5px #7e8b57;
 	background-position: center;
+	background:url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_500/v1464980784/agape/Profile%20Pictures/KatPerkins.jpg');
 }
 .profile-circle.volunteer{
-	border-radius: 50%;
-	border: solid 5px #7e8b57;
 	height: 150px;
 	width: 150px;
 	float: right;
+	border-radius: 50%;
+	background-size: cover;
+	border: solid 5px #7e8b57;
+	background-position: center;
 	background:url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,e_brightness:20,g_face,h_300,w_300/v1456786991/agape/administrative-volunteer.png');
-	background-size: cover;
-	background-position: center;
 }
-
 .profile-circle.cna{
-	border-radius: 50%;
-	border: solid 5px #7e8b57;
 	height: 150px;
 	width: 150px;
 	float: right;
-	background:url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_500/v1469574864/agape/RosaToscano.jpg');
+	border-radius: 50%;
 	background-size: cover;
+	border: solid 5px #7e8b57;
 	background-position: center;
+	background:url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_500/v1469574864/agape/RosaToscano.jpg');
 }
 
 /*CARE TEAM PROFILES*/
@@ -602,13 +560,14 @@ body {
   background-position: center; }
 
 .profile-circle.sam {
-  border-radius: 50%;
-  border: solid 5px #7e8b57;
-  height: 75px;
-  width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1466196957/agape/Profile%20Pictures/SamBurns.png");
-  background-size: cover;
-  background-position: center; }
+	border-radius: 50%;
+	border: solid 5px #7e8b57;
+	height: 75px;
+	width: 75px;
+	background-size: cover;
+	background-position: center;
+	background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1466196957/agape/Profile%20Pictures/SamBurns.png");
+}
 
 .profile-circle.zach {
   border-radius: 50%;
