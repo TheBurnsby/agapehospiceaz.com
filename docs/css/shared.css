@@ -1,0 +1,1012 @@
+/* --------------------------------------------GENERAL CONTENT */
+/*
+#6d387a; agape purple
+#666699; agape blue
+#738445; Agape green
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #6d387a;
+    font-family: "serenity", sans-serif;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+h3 {
+    color: #6d387a;
+    font-weight: 300;
+    font-size: 1.9rem;
+}
+
+h5 {
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 1px 1px #333;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+    line-height: 1.375rem;
+    font-family: "serenity", sans-serif;
+}
+
+ul, ol, li {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.375rem;
+    font-family: "serenity", sans-serif;
+}
+
+a, a:link, a:visited, a:focus, a:hover {
+    outline: none;
+    color: #6d387a;
+    text-decoration: none;
+}
+
+img {
+    max-width: none;
+}
+
+.thumbnail {
+    margin: 1rem 0.5rem 0 0;
+}
+
+/*Menu Bar*/
+.main-menu {
+    background: #fff;
+}
+
+.main-menu > div {
+    display: inline-block;
+}
+
+.main-menu div:nth-last-child(1) {
+    float: right;
+}
+
+nav {
+    box-sizing: initial;
+}
+
+.nav-bar {
+    z-index: 1;
+    color: #6d387a;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.nav-tool {
+    background: #fff;
+}
+
+.nav-list-main {
+    text-align: right !important;
+}
+
+.nav-list-sub {
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar li > a {
+    color: #6d387a;
+    padding: 16px 32px !important;
+}
+
+.nav-list-sub > li:nth-child(2) {
+    font-weight: bold;
+}
+
+/*Nav ENd*/
+.button:focus {
+    outline: none;
+}
+
+.button.purple {
+    background-color: #6d387a;
+    color: #fff;
+}
+
+.button.purple:hover {
+    color: #6d387a;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid #6d387a;
+    font-weight: bold;
+}
+
+.button.hpurple {
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+.button.hpurple:hover {
+    color: #fff;
+    border-radius: 0px;
+    background-color: #6d387a;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+blockquote {
+    color: #fff;
+}
+
+cite {
+    color: #e1e1e1;
+}
+
+.top {
+    width: 100%;
+    height: 3rem;
+    background-color: #fafafa;
+}
+
+.top-contact {
+    padding-top: 10px;
+    float: left;
+    padding-left: 0.5rem;
+}
+
+.top-contact > div {
+    display: inline-block;
+    padding-right: 0.5rem;
+}
+
+.top-contact > div:nth-child(3) {
+    border-left: 1px solid #000;
+    padding-left: 0.5rem;
+}
+
+.top-contact > div:nth-child(3):hover {
+    text-decoration: underline;
+}
+
+.top-contact a {
+    color: #555555;
+    font-size: .8rem;
+}
+
+.top .social-icons {
+    font-size: 1rem;
+    padding-top: 10px;
+    float: right;
+}
+
+.icon {
+    padding: 10px;
+    display: inline;
+    font-size: 1.3rem;
+}
+
+.icon.facebook {
+    background-color: #fafafa;
+    -webkit-transition: background-color 0.25s ease-out;
+    -moz-transition: background-color 0.25s ease-out;
+    -o-transition: background-color 0.25s ease-out;
+    transition: background-color 0.25s ease-out;
+}
+
+.icon.google {
+    background-color: #fafafa;
+    -webkit-transition: background-color 0.25s ease-out;
+    -moz-transition: background-color 0.25s ease-out;
+    -o-transition: background-color 0.25s ease-out;
+    transition: background-color 0.25s ease-out;
+}
+
+.icon.linkedin {
+    background-color: #fafafa;
+    -webkit-transition: background-color 0.25s ease-out;
+    -moz-transition: background-color 0.25s ease-out;
+    -o-transition: background-color 0.25s ease-out;
+    transition: background-color 0.25s ease-out;
+}
+
+.icon.facebook:hover {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.icon.google:hover {
+    background-color: #dd4b39;
+    color: #fff;
+}
+
+.icon.linkedin:hover {
+    background-color: #007bb5;
+    color: #fff;
+}
+
+.center {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+.center .circle-icon {
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem auto;
+    border-radius: 100%;
+    background-color: #ece5ee;
+    border: .6rem solid #845091;
+}
+
+.center .circle-icon:hover {
+    border-color: #d3c5d6;
+    background-color: #fff;
+    transition: background-color 0.25s ease-in, color 0.25s ease-out;
+}
+
+.circle-icon img {
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
+
+.center .button {
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
+
+.classy {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.classy img {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 400px;
+    min-width: 100%;
+    position: absolute;
+}
+
+.head-bg {
+    width: 100%;
+    color: #fff;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 15px solid #6d387a;
+    /*background: url('') no-repeat center;*/
+}
+
+.head-bg img {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 400px;
+    min-width: 100%;
+    position: absolute;
+}
+
+.head-text {
+    padding-top: 15%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.head-text h1 {
+    color: #fff;
+}
+
+.number-box {
+    padding: 15px;
+    margin: 0 1rem auto;
+    float: right;
+    display: none;
+    text-align: center;
+    border-radius: 0 0 4px 4px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.number-box p, .number-box h3 {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.testimonial .slide-text {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.slide-text p {
+    color: #fff;
+    font-size: 1.6rem;
+    text-shadow: 1px 2px #333;
+}
+
+.callout.primary {
+    border: none;
+    height: 450px;
+    border-radius: 10px;
+    background-color: #eef1f1;
+}
+
+.agape-who {
+    text-align: center;
+}
+
+.agape-who .columns {
+    padding-left: .3rem;
+    padding-right: .3rem;
+}
+
+.agape-who h3 {
+    color: #6d387a;
+}
+
+.agape-who hr {
+    color: #6d387a;
+    width: 75px;
+}
+
+.circle-icon {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 3px solid #e9eaea;
+}
+
+.agape-who i {
+    top: 28px;
+    color: #6d387a;
+    position: relative;
+}
+
+.bg-image {
+    width: 100%;
+    height: 350px;
+    background: url("http://www.agapehospiceaz.com/images/testimonials.jpg");
+}
+
+.foot-section {
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:6d387a,co_rgb:fff,o_19/v1460846020/Arizona-High-Resolution-Wallpapers_effoty.jpg") no-repeat fixed;
+}
+
+.foot-section h3 {
+    color: #fff;
+}
+
+.aln {
+    left: 50%;
+    height: 80px;
+    width: 200px;
+    position: relative;
+    transform: translate(-50%);
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463443793/agape/aln-no-hover.png") no-repeat center;
+}
+
+.aln:hover {
+    transition: background ease-out 0.5s;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463436855/agape/ALN-Hover.png") no-repeat center;
+}
+
+.joint-commission {
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    transform: translate(-50%);
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_120/v1463443991/agape/JCNQA-no-hover.png") no-repeat center;
+}
+
+.joint-commission:hover {
+    transition: background ease-out 0.5s;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_120/v1456786992/agape/JCNQA_logo.png") no-repeat center;
+}
+
+.mcc {
+    left: 50%;
+    height: 94px;
+    width: 200px;
+    position: relative;
+    transform: translate(-50%);
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463443643/agape/MCC-no-hover.png") no-repeat center;
+}
+
+.mcc:hover {
+    transition: background ease-out 0.5s;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463444242/agape/MCC-hover.png") no-repeat center;
+}
+
+.veterans {
+    left: 50%;
+    height: 50px;
+    width: 255px;
+    position: relative;
+    transform: translate(-50%);
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,h_50/v1463443921/agape/veterans-no-hover.png") no-repeat center;
+}
+
+.veterans:hover {
+    transition: background ease-out 0.5s;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,h_50/v1456786990/agape/veterans.png") no-repeat center;
+}
+
+/*Care Team Page */
+.staff-title {
+    color: #fff;
+    padding: 10px;
+    background: #6d387a;
+}
+
+.bio .button {
+    width: 100%;
+    background: #7e8b57;
+}
+
+.staff-title h4 {
+    color: #fff;
+}
+
+.care-team {
+    padding-top: 25px;
+}
+
+.arrow {
+    width: 0;
+    left: 50%;
+    height: 0;
+    position: relative;
+    transform: translate(-50%);
+    border-top: 20px solid #6d387a;
+    /*agape purple*/
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+/*Volunteer Page*/
+.volunteer-container {
+    padding-top: 25px;
+}
+
+.volunteer-wrap {
+    padding: 25px;
+    background-color: #ededf6;
+}
+
+.volunteer-wrap img {
+    max-width: 100%;
+}
+
+.head-bg.volunteer {
+    width: 100%;
+    color: #fff;
+    height: 400px;
+    border-bottom: 15px solid #666699;
+    /*agape blue*/
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:669,o_46/v1456785666/agape/agape_home_slider.jpg") no-repeat center;
+}
+
+.arrow.volunteer {
+    left: 50%;
+    height: 0;
+    width: 0;
+    position: relative;
+    transform: translate(-50%);
+    border-top: 20px solid #666699;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+/*Contact Us*/
+.head-bg.contact {
+    width: 100%;
+    color: #fff;
+    height: 400px;
+    border-bottom: 15px solid #7e8b57;
+    /*agape green*/
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:7e8b57,c_fill,g_north,h_500,o_48,w_1920/v1460846020/Arizona-High-Resolution-Wallpapers_effoty.jpg") no-repeat center;
+}
+
+.arrow.contact {
+    left: 50%;
+    height: 0;
+    width: 0;
+    position: relative;
+    transform: translate(-50%);
+    border-top: 20px solid #7e8b57;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+/*.agape-life{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	width: 100%;
+	text-align: center;
+}
+.agape-life .image{
+	display: inline;
+	padding: none;
+}*/
+#fade-title {
+    display: none;
+}
+
+.image img {
+    max-width: 100% !important;
+}
+
+.reveal:focus {
+    outline: none;
+}
+
+.profile-circle.nurse {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 150px;
+    width: 150px;
+    float: right;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_500,w_500/v1469574986/agape/MicahRumel.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.bereavement {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 150px;
+    width: 150px;
+    float: right;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_faces,h_500,w_500/v1464983424/agape/Profile%20Pictures/BelindaBrauer.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.physician {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 150px;
+    width: 150px;
+    float: right;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_500/v1464980783/agape/Profile%20Pictures/JoelMoncivaiz.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.social-service {
+    border: solid 5px #7e8b57;
+    border-radius: 50%;
+    width: 150px;
+    float: right;
+    height: 150px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_500/v1464980784/agape/Profile%20Pictures/KatPerkins.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.volunteer {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 150px;
+    width: 150px;
+    float: right;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,e_brightness:20,g_face,h_300,w_300/v1456786991/agape/administrative-volunteer.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.cna {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 150px;
+    width: 150px;
+    float: right;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_500/v1469574864/agape/RosaToscano.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*CARE TEAM PROFILES*/
+.profile-circle.tammy {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face:center,h_933,w_933/v1464980789/agape/Profile%20Pictures/TammyBurns.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.sam {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background-size: cover;
+    background-position: center;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1466196957/agape/Profile%20Pictures/SamBurns.png");
+}
+
+.profile-circle.zach {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_faces,h_933,w_933/v1470345871/agape/ZachMcClain.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.jon {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,h_933,w_933/v1464980791/agape/Profile%20Pictures/JonBurns.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.russell {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,h_933,w_933/v1464980788/agape/Profile%20Pictures/Russell_Burns.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.ron-z {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1471018979/agape/Image_7638_v2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.ron {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,e_brightness:10,g_face,h_933,w_933/v1464980790/agape/Profile%20Pictures/RonSable.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.otto {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1470081721/agape/OttoBohon.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.stephan {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face:center,h_731,w_731/v1470941610/agape/Picture1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.april {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980782/agape/Profile%20Pictures/AprilRosa.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.joel {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980783/agape/Profile%20Pictures/JoelMoncivaiz.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.kim {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980783/agape/Profile%20Pictures/KimHenry.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.jody {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980781/agape/Profile%20Pictures/JodyAgins.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.dana {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980781/agape/Profile%20Pictures/DanaEvans.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.crystal {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980781/agape/Profile%20Pictures/CrystalThrall.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.lorraine {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980786/agape/Profile%20Pictures/LorraineMoon.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.kat {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980784/agape/Profile%20Pictures/KatPerkins.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.belinda {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464983424/agape/Profile%20Pictures/BelindaBrauer.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.gary {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980786/agape/Profile%20Pictures/GaryHenry.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.catherine {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1470081982/agape/CatherineVaughan.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.sven {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1470081981/agape/SvenOlson.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.inquiry-text {
+    text-align: center;
+    padding: 1rem;
+    background: #f5f5f5;
+}
+
+.how-we-do-small {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.how-we-do {
+    padding-top: 25px;
+}
+
+.block-left {
+    text-align: right;
+}
+
+.block-right {
+    text-align: left;
+}
+
+.block-middle {
+    text-align: center;
+}
+
+/*How We Do*/
+.how-we-do-foot {
+    text-align: center;
+}
+
+table {
+    font-size: 12px;
+}
+
+.buttons-back {
+    display: inline-block;
+}
+
+.bottom-foot {
+    width: 100%;
+    height: 75px;
+    background-color: #fafafa;
+    padding: 25px;
+}
+
+.bottom-foot p {
+    font-size: 12px;
+}
+
+.bottom-foot a {
+    font-size: 12px;
+}
+
+.bill-photos img {
+    width: 100%;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Small screens  */
+@media only screen and (max-width: 640px) {
+    .arrow.contact {
+        left: 50%;
+    }
+    h4 {
+        font-size: 1.6rem;
+    }
+    .profile-circle.bereavement {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .profile-circle.cna {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .profile-circle.social-service {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .profile-circle.physician {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .profile-circle.nurse {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .profile-circle.volunteer {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+/* Medium screens */
+@media only screen and (max-width: 1024px) {
+    .profile-circle.bereavement {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .profile-circle.cna {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .profile-circle.social-service {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .profile-circle.physician {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .profile-circle.nurse {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .profile-circle.volunteer {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+/* Large screens */
+@media only screen and (max-width: 450px) {
+    .number-box {
+        position: inherit;
+        float: none;
+    }
+}
