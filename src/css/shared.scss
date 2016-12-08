@@ -60,6 +60,9 @@ a, a:link, a:visited, a:focus, a:hover {
 img {
 	max-width: none;
 }
+.thumbnail{
+	margin: 1rem 0.5rem 0 0;
+}
 /*Menu Bar*/
 .main-menu {
 	background: #fff;
@@ -142,16 +145,28 @@ cite{
 }
 .top-contact {
 	padding-top: 10px;
+	float: left;
+	padding-left: 0.5rem;
+}
+.top-contact > div {
+	display: inline-block;
+	padding-right: 0.5rem;
+}
+.top-contact > div:nth-child(3) {
+	border-left: 1px solid #000;
+	padding-left: 0.5rem;
+	&:hover {
+		text-decoration: underline;
+	}
 }
 .top-contact a{
 	color: #555555;
 	font-size: .8rem;
 }
 .top .social-icons{
-	width: 100%;
 	font-size: 1rem;
 	padding-top: 10px;
-	max-width: 12.6rem;
+	float: right;
 }
 .icon {
 	padding: 10px;
@@ -792,7 +807,10 @@ table {
 .bottom-foot a{
 	font-size: 12px;
 }
-
+.bill-photos img{
+	width: 100%;
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+}
 
 /* Small screens  */
 @media only screen and (max-width: 640px) {
