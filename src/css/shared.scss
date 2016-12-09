@@ -91,7 +91,7 @@ nav {
 	text-align: right !important;
 }
 .nav-list-sub {
-	z-index: 1;
+	width: 230px;
 	background: #fff;
 	box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
 }
@@ -903,10 +903,23 @@ table {
 
 /* Large screens */
 @media only screen and (min-width: 1025px) { }
+@media only screen and (max-width: 940px) {
+	.nav-bar {
+		width: 100% !important;
+		display: block;
+	}
+	.nav-list-main {
+		background: #fff;
+		box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+	    position: absolute;
+		display: block;
+	}
 
+}
 @media only screen and (max-width: 450px) {
 	.number-box {
 		position: inherit;
 		float: none;
 	}
+
 }
