@@ -1,10 +1,8 @@
-/* --------------------------------------------GENERAL CONTENT */
-/*
-#6d387a; agape purple
-#666699; agape blue
-#738445; Agape green
+$primary: #6d387a;
+$blue: #666699;
+$green: #738445;
+$light-grey: #f5f5f5;
 
-*/
 *  {
 	margin: 0;
 	padding: 0;
@@ -18,7 +16,7 @@
 }
 body {}
 h1, h2, h3, h4, h5, h6 {
-	color: #6d387a;
+	color: $primary;
 	font-family: "serenity", sans-serif;
 }
 h1 {
@@ -30,7 +28,7 @@ h2 {
 	font-size: 2.2rem;
 }
 h3 {
-	color: #6d387a;
+	color: $primary;
 	font-weight: 300;
 	font-size: 1.9rem;
 }
@@ -54,7 +52,7 @@ ul, ol, li {
 }
 a, a:link, a:visited, a:focus, a:hover {
 	outline: none;
-	color: #6d387a;
+	color: $primary;
 	text-decoration: none;
 }
 img {
@@ -78,7 +76,7 @@ nav {
 }
 .nav-bar {
 	z-index: 1;
-	color: #6d387a;
+	color: $primary;
 	background: #fff;
 	display: inline-block;
 	vertical-align: middle;
@@ -96,7 +94,7 @@ nav {
 	box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
 }
 .nav-bar li > a {
-	color: #6d387a;;
+	color: $primary;;
 	padding: 16px 32px !important;
 }
 .nav-list-sub > li:nth-child(2) {
@@ -108,14 +106,14 @@ nav {
 }
 
 .button.purple{
-	background-color: #6d387a;
+	background-color: $primary;
 	color: #fff;
 }
 .button.purple:hover{
-	color: #6d387a;
+	color: $primary;
 	border-radius: 2px;
 	background-color: #fff;
-	border: 1px solid #6d387a;
+	border: 1px solid $primary;
 	font-weight: bold;
 }
 .button.hpurple{
@@ -127,7 +125,7 @@ nav {
 .button.hpurple:hover{
 	color: #fff;
 	border-radius: 0px;
-	background-color: #6d387a;
+	background-color: $primary;
 }
 a:hover {
 	cursor: pointer;
@@ -259,7 +257,7 @@ cite{
 	height: 400px;
 	overflow: hidden;
 	position: relative;
-	border-bottom: 15px solid #6d387a;
+	border-bottom: 15px solid $primary;
 	/*background: url('') no-repeat center;*/
 }
 .head-bg img {
@@ -318,10 +316,10 @@ cite{
 	padding-right: .3rem;
 }
 .agape-who h3{
-	color: #6d387a;
+	color: $primary;
 }
 .agape-who hr{
-	color: #6d387a;
+	color: $primary;
 	width: 75px;
 }
 .circle-icon{
@@ -334,74 +332,61 @@ cite{
 }
 .agape-who i{
 	top: 28px;
-	color: #6d387a;
+	color: $primary;
 	position: relative;
+}
+.insurance  {
+	text-align: center;
+	margin: 1rem auto;
+	img {
+		height: 100px;
+		display: inline-block;
+	}
 }
 .bg-image{
 	width: 100%;
 	height: 350px;
 	background: url("http://www.agapehospiceaz.com/images/testimonials.jpg");
 }
+.upper-foot {
+	background: $light-grey;
+	padding: 1rem;
+	color: $primary;
+	text-align: center;
+    > div {
+		display: inline-block;
+		margin: 0 1rem auto;
+	}
+	p {
+		font-weight: bolder;
+		font-size: 24px;
+	}
+}
 .foot-section{
 	color: #fff;
 	padding: 25px;
-	text-align: center;
+	// text-align: center;
 	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:6d387a,co_rgb:fff,o_19/v1460846020/Arizona-High-Resolution-Wallpapers_effoty.jpg') no-repeat fixed;
 }
 .foot-section h3{
 	color: #fff;
 }
-.aln{
-	left: 50%;
-	height: 80px;
-	width: 200px;
-	position: relative;
-	transform: translate(-50%);
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463443793/agape/aln-no-hover.png')no-repeat center;
+.partners img {
+	filter: grayscale(1);
+	-o-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
 }
-
-.aln:hover{
-	transition: background ease-out 0.5s;
-	background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463436855/agape/ALN-Hover.png") no-repeat center;
+.partners img:hover {
+	filter: grayscale(0);
+	-o-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-webkit-filter: grayscale(0);
 }
-
-.joint-commission {
-	left: 50%;
-	width: 120px;
-	height: 120px;
-	position: relative;
-	transform: translate(-50%);
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_120/v1463443991/agape/JCNQA-no-hover.png') no-repeat center;
-}
-.joint-commission:hover {
-	transition: background ease-out 0.5s;
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_120/v1456786992/agape/JCNQA_logo.png') no-repeat center;
-}
-
-.mcc {
-	left: 50%;
-	height: 94px;
-	width: 200px;
-	position: relative;
-	transform: translate(-50%);
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463443643/agape/MCC-no-hover.png') no-repeat center;
-}
-.mcc:hover {
-	transition: background ease-out 0.5s;
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_200/v1463444242/agape/MCC-hover.png') no-repeat center;
-}
-
-.veterans {
-	left: 50%;
-	height: 50px;
-	width: 255px;
-	position: relative;
-	transform: translate(-50%);
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,h_50/v1463443921/agape/veterans-no-hover.png') no-repeat center;
-}
-.veterans:hover {
-	transition: background ease-out 0.5s;
-	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,h_50/v1456786990/agape/veterans.png') no-repeat center;
+.partners {
+	text-align: center;
 }
 
 /*Care Team Page */
@@ -409,7 +394,7 @@ cite{
 .staff-title{
 	color: #fff;
 	padding: 10px;
-	background: #6d387a;
+	background: $primary;
 }
 .bio .button{
 	width: 100%;
@@ -428,7 +413,7 @@ cite{
 	height: 0;
 	position: relative;
 	transform: translate(-50%);
-	border-top: 20px solid #6d387a; /*agape purple*/
+	border-top: 20px solid $primary; /*agape purple*/
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
 }
@@ -447,7 +432,7 @@ cite{
 	width: 100%;
 	color: #fff;
 	height: 400px;
-	border-bottom: 15px solid #666699; /*agape blue*/
+	border-bottom: 15px solid $blue; /*agape blue*/
 	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:669,o_46/v1456785666/agape/agape_home_slider.jpg') no-repeat center;
 }
 .arrow.volunteer{
@@ -456,7 +441,7 @@ cite{
 	width: 0;
 	position: relative;
 	transform: translate(-50%);
-	border-top: 20px solid #666699;
+	border-top: 20px solid $blue;
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
 }
