@@ -143,8 +143,8 @@ function initMap() {
 	<div class="contact-form">
 		<div class="row">
 			<div class="small-12 medium-8 columns">
-				<form action="https://formspree.io/mgvelzqx" method="POST">
-				  <input type="hidden" name="_cc" value="sburns@agapehospiceaz.com" />
+				<form class="form">
+				<input type="hidden" name="*cc" value="sburns@agapehospiceaz.com" />
 					<div class="row">
 						<div class="medium-6 columns">
 							<label>First Name <small>required</small>
@@ -184,11 +184,13 @@ function initMap() {
 					<div class="row">
 						<div class="small-12 columns">
 							<div class="submit-button">
-								<button class="button purple" type="submit">Submit</button>
+								<input type="hidden" name="*formname" value="Main Contact">
+								<input class="button purple" type="submit" value="Submit">
 							</div>
 						</div>
 					</div>
 				</form>
+				<div class="response"></div>
 			</div>
 			<div class="contact-numbers">
 				<div class="small-12 medium-4 columns">

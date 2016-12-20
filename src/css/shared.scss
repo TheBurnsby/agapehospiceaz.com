@@ -97,7 +97,9 @@ nav {
 }
 .nav-bar li > a {
 	color: #fff;
+	font-size: 1.1rem;
 	padding: 16px 32px !important;
+
 }
 .nav-list-sub li:nth-child(1) {
 	font-weight: bold !important;
@@ -174,21 +176,21 @@ cite{
 	font-size: 1.3rem;
 }
 .icon.facebook {
-	background-color: #fafafa;
+	background-color: $light-grey;
 	  -webkit-transition: background-color 0.25s ease-out;
 	  -moz-transition: background-color 0.25s ease-out;
 	  -o-transition: background-color 0.25s ease-out;
 	  transition: background-color 0.25s ease-out;
 }
 .icon.google {
-	background-color: #fafafa;
+	background-color: $light-grey;
 	  -webkit-transition: background-color 0.25s ease-out;
 	  -moz-transition: background-color 0.25s ease-out;
 	  -o-transition: background-color 0.25s ease-out;
 	  transition: background-color 0.25s ease-out;
 }
 .icon.linkedin {
-	background-color: #fafafa;
+	background-color: $light-grey;
 	  -webkit-transition: background-color 0.25s ease-out;
 	  -moz-transition: background-color 0.25s ease-out;
 	  -o-transition: background-color 0.25s ease-out;
@@ -284,7 +286,7 @@ cite{
 	padding: 15px;
 	margin:0 1rem auto;
 	float: right;
-	display: none;
+
 	text-align: center;
 	border-radius: 0 0 4px 4px;
 	background: rgba(255,255,255,0.7);
@@ -355,14 +357,12 @@ cite{
 	padding: 1rem;
 	color: $primary;
 	text-align: center;
-	vertical-align: middle;
-    > div {
-		display: inline-block;
-		margin: 0 1rem auto;
-	}
-	p {
+	span {
+		vertical-align: middle;
 		font-weight: bolder;
 		font-size: 24px;
+		margin: 0 1rem auto;
+		font-family: "serenity", sans-serif;
 	}
 }
 .foot-section{
@@ -477,9 +477,7 @@ cite{
 	display: inline;
 	padding: none;
 }*/
-#fade-title{
-	display: none;
-}
+
 
 .image img {
 	max-width: 100% !important;
@@ -559,7 +557,7 @@ cite{
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face:center,h_933,w_933/v1464980789/agape/Profile%20Pictures/TammyBurns.jpg");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face:center,h_500,w_500/v1464980789/agape/Profile%20Pictures/TammyBurns.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -568,9 +566,9 @@ cite{
 	border: solid 5px #7e8b57;
 	height: 75px;
 	width: 75px;
+	background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_300,w_300/v1466196957/agape/Profile%20Pictures/SamBurns.png");
 	background-size: cover;
 	background-position: center;
-	background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1466196957/agape/Profile%20Pictures/SamBurns.png");
 }
 
 .profile-circle.zach {
@@ -578,7 +576,7 @@ cite{
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_faces,h_933,w_933/v1470345871/agape/ZachMcClain.jpg");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_faces,h_300,w_300/v1470345871/agape/ZachMcClain.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -587,7 +585,7 @@ cite{
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,h_933,w_933/v1464980791/agape/Profile%20Pictures/JonBurns.png");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,h_300,w_300/v1464980791/agape/Profile%20Pictures/JonBurns.png");
   background-size: cover;
   background-position: center; }
 
@@ -596,34 +594,17 @@ cite{
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,h_933,w_933/v1464980788/agape/Profile%20Pictures/Russell_Burns.jpg");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,h_300,w_300/v1464980788/agape/Profile%20Pictures/Russell_Burns.jpg");
   background-size: cover;
   background-position: center; }
 
-.profile-circle.ron-z {
-  border-radius: 50%;
-  border: solid 5px #7e8b57;
-  height: 75px;
-  width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1471018979/agape/Image_7638_v2.jpg");
-  background-size: cover;
-  background-position: center; }
 
 .profile-circle.ron {
   border-radius: 50%;
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,e_brightness:10,g_face,h_933,w_933/v1464980790/agape/Profile%20Pictures/RonSable.png");
-  background-size: cover;
-  background-position: center; }
-
-.profile-circle.otto {
-  border-radius: 50%;
-  border: solid 5px #7e8b57;
-  height: 75px;
-  width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1470081721/agape/OttoBohon.png");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,e_brightness:10,g_face,h_300,w_300/v1464980790/agape/Profile%20Pictures/RonSable.png");
   background-size: cover;
   background-position: center; }
 
@@ -632,16 +613,25 @@ cite{
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face:center,h_731,w_731/v1470941610/agape/Picture1.png");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face:center,h_300,w_300/v1470941610/agape/Picture1.png");
   background-size: cover;
   background-position: center; }
+
+.profile-circle.erika {
+border-radius: 50%;
+border: solid 5px #7e8b57;
+height: 75px;
+width: 75px;
+background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,fl_any_format.lossy,g_face,h_300,w_300/v1481214756/agape/Profile%20Pictures/ErikaHillebrand.jpg");
+background-size: cover;
+background-position: center; }
 
 .profile-circle.april {
   border-radius: 50%;
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980782/agape/Profile%20Pictures/AprilRosa.jpg");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_300,w_300/v1464980782/agape/Profile%20Pictures/AprilRosa.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -650,7 +640,7 @@ cite{
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980783/agape/Profile%20Pictures/JoelMoncivaiz.jpg");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_300,w_300/v1464980783/agape/Profile%20Pictures/JoelMoncivaiz.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -659,7 +649,7 @@ cite{
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980783/agape/Profile%20Pictures/KimHenry.jpg");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_300,w_300/v1464980783/agape/Profile%20Pictures/KimHenry.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -668,7 +658,7 @@ cite{
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980781/agape/Profile%20Pictures/JodyAgins.jpg");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_300,w_300/v1464980781/agape/Profile%20Pictures/JodyAgins.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -677,16 +667,7 @@ cite{
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980781/agape/Profile%20Pictures/DanaEvans.jpg");
-  background-size: cover;
-  background-position: center; }
-
-.profile-circle.crystal {
-  border-radius: 50%;
-  border: solid 5px #7e8b57;
-  height: 75px;
-  width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980781/agape/Profile%20Pictures/CrystalThrall.jpg");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_300,w_300/v1464980781/agape/Profile%20Pictures/DanaEvans.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -695,7 +676,7 @@ cite{
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980786/agape/Profile%20Pictures/LorraineMoon.jpg");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_300,w_300/v1464980786/agape/Profile%20Pictures/LorraineMoon.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -704,7 +685,7 @@ cite{
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980784/agape/Profile%20Pictures/KatPerkins.jpg");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_300,w_300/v1464980784/agape/Profile%20Pictures/KatPerkins.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -713,7 +694,7 @@ cite{
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464983424/agape/Profile%20Pictures/BelindaBrauer.jpg");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_300,w_300/v1464983424/agape/Profile%20Pictures/BelindaBrauer.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -722,7 +703,7 @@ cite{
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1464980786/agape/Profile%20Pictures/GaryHenry.png");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_300,w_300/v1464980786/agape/Profile%20Pictures/GaryHenry.png");
   background-size: cover;
   background-position: center; }
 
@@ -731,7 +712,7 @@ cite{
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1470081982/agape/CatherineVaughan.png");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_300,w_300/v1470081982/agape/CatherineVaughan.png");
   background-size: cover;
   background-position: center; }
 
@@ -740,7 +721,7 @@ cite{
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_933,w_933/v1470081981/agape/SvenOlson.png");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_300,w_300/v1470081981/agape/SvenOlson.png");
   background-size: cover;
   background-position: center; }
 
