@@ -329,7 +329,6 @@ cite {
     padding: 15px;
     margin: 0 1rem auto;
     float: right;
-    display: none;
     text-align: center;
     border-radius: 0 0 4px 4px;
     background: rgba(255, 255, 255, 0.7);
@@ -551,10 +550,6 @@ cite {
 	display: inline;
 	padding: none;
 }*/
-#fade-title {
-    display: none;
-}
-
 .image img {
     max-width: 100% !important;
 }
