@@ -425,7 +425,8 @@ cite {
 .foot-section {
     color: #fff;
     padding: 25px;
-    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:6d387a,co_rgb:fff,o_19/v1460846020/Arizona-High-Resolution-Wallpapers_effoty.jpg") no-repeat fixed;
+    width: 100%;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:6d387a,co_rgb:fff,o_19/v1460846020/Arizona-High-Resolution-Wallpapers_effoty.jpg");
 }
 
 .foot-section h3 {
