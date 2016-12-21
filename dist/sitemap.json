@@ -17,5 +17,7 @@
 			"volunteer-form": "index.v.html"
 		}
 	},
-	"contact": "index.v.html"
+	"contact": "index.v.html",
+	"memorial": "index.v.html",
+	"sitemap": "index.v.html"
 }
