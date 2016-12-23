@@ -58,6 +58,10 @@ a, a:link, a:visited, a:focus, a:hover {
 img {
 	max-width: none;
 }
+.float-left {
+	float: left;
+	margin: 0.5rem 1rem 0 0;
+}
 .thumbnail{
 	margin: 1rem 0.5rem 0 0;
 }
@@ -103,6 +107,12 @@ nav {
 }
 .nav-list-sub li:nth-child(1) {
 	font-weight: bold !important;
+}
+
+.side-menu li{
+	list-style: none;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 /*Nav ENd*/
 .button:focus {
@@ -784,7 +794,7 @@ table {
 
 // Articles
 .article {
-	margin: 5rem auto;
+	margin: 4.5rem auto;
 }
 /* Small screens  */
 @media only screen and (max-width: 640px) {
@@ -885,8 +895,13 @@ table {
 		left: initial;
 		height: 80px;
 	}
-	.logo > a > img {
+	.logo > a > svg {
     	height: 80px;
+	}
+
+	.float-left img {
+		max-width: 100%;
+		margin:0;
 	}
 }
 @media only screen and (max-width: 450px) {
@@ -906,5 +921,6 @@ table {
 	.head-text {
 		padding-top: 25%;
 	}
+
 
 }
