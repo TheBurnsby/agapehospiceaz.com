@@ -3,17 +3,17 @@
 	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 			xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 			xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-		<url><loc>/index.v.html</loc></url>
-		<url><loc>/care-team/index.v.html</loc></url>
-		<url><loc>/care-team/employment-inquiry/index.v.html</loc></url>
-		<url><loc>/how-we-do-it/volunteer/index.v.html</loc></url>
-		<url><loc>/how-we-do-it/index.v.html</loc></url>
-		<url><loc>/how-we-do-it/doctor/index.v.html</loc></url>
-		<url><loc>/how-we-do-it/nurse/index.v.html</loc></url>
-		<url><loc>/how-we-do-it/cna/index.v.html</loc></url>
-		<url><loc>/how-we-do-it/social-service/index.v.html</loc></url>
-		<url><loc>/how-we-do-it/bereavement/index.v.html</loc></url>
-		<url><loc>/how-we-do-it/volunteer/index.v.html</loc></url>
-		<url><loc>/how-we-do-it/volunteer/volunteer-form/index.v.html</loc></url>
-		<url><loc>/contact/index.v.html</loc></url>
+		<url><loc>/index.html</loc></url>
+		<url><loc>/care-team/index.html</loc></url>
+		<url><loc>/care-team/employment-inquiry/index.html</loc></url>
+		<url><loc>/how-we-do-it/volunteer/index.html</loc></url>
+		<url><loc>/how-we-do-it/index.html</loc></url>
+		<url><loc>/how-we-do-it/doctor/index.html</loc></url>
+		<url><loc>/how-we-do-it/nurse/index.html</loc></url>
+		<url><loc>/how-we-do-it/cna/index.html</loc></url>
+		<url><loc>/how-we-do-it/social-service/index.html</loc></url>
+		<url><loc>/how-we-do-it/bereavement/index.html</loc></url>
+		<url><loc>/how-we-do-it/volunteer/index.html</loc></url>
+		<url><loc>/how-we-do-it/volunteer/volunteer-form/index.html</loc></url>
+		<url><loc>/contact/index.html</loc></url>
 	</urlset>
