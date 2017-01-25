@@ -37,6 +37,31 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
+
+	var gallery = document.querySelector('.gallery');
+	if (gallery) {
+		Astatine.ajax({
+			method: 'get',
+			action: 'https://res.cloudinary.com/dbc2wlvk8/image/list/clay-workshop.json',
+			success: function (xhr) {
+				var list = JSON.parse(xhr.response);
+				var largeImages = [];
+				var smallImages = [];
+
+				for (var i = 0, l = list.resources.length; i < l; i++) {
+					var item = list.resources[i];
+					largeImages.push('https://res.cloudinary.com/dbc2wlvk8/image/upload/' + item.public_id + '.' + item.format);
+					smallImages.push('https://res.cloudinary.com/dbc2wlvk8/image/upload/w_100/' + item.public_id + '.' + item.format);
+				}
+
+				erbium.gallery.create('.gallery', largeImages, smallImages);
+			},
+			error: function (xhr) {
+				console.log(xhr);
+			}
+		});
+	}
+
 });
 
 $(document).foundation();

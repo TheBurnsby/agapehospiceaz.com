@@ -37,6 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
+			method: 'get',
+			action: 'https://res.cloudinary.com/dbc2wlvk8/image/list/clay-workshop.json',
+				var smallImages = [];
 });
 
 $(document).foundation();
