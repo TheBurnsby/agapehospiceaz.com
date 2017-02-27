@@ -62,6 +62,29 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
+		// var toggler = document.querySelectorAll('.toggle-btn');
+		// var bios = document.querySelectorAll('.bio');
+		//
+		// for (var i = 0; i < toggler.length; i++) {
+		// 	var toggle = toggler[i];
+		// 	var fullBios = bios[i];
+		// 	var closeButton = document.createElement('div');
+		//
+		// 	closeButton.classList.add('close-button');
+		// 	closeButton.innerText = "X";
+		// 	fullBios.appendChild(closeButton);
+		//
+		// 	toggle.addEventListener('click', function (){
+		// 		var currentBio = this.parentNode.nextElementSibling;
+		// 		currentBio.classList.toggle('active');
+		// 		document.body.style="overflow-y: hidden";
+		// 	});
+		//
+		// 	closeButton.addEventListener('click', function (){
+		// 		this.parentNode.classList.toggle('active');
+		// 		document.body.style="overflow-y: inherit";
+		// 	});
+		// }
 });
 
 $(document).foundation();

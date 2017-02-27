@@ -637,12 +637,12 @@ background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,fl_any_
 background-size: cover;
 background-position: center; }
 
-.profile-circle.joel {
+.profile-circle.rachel {
   border-radius: 50%;
   border: solid 5px #7e8b57;
   height: 75px;
   width: 75px;
-  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_300,w_300/v1464980783/agape/Profile%20Pictures/JoelMoncivaiz.jpg");
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,fl_any_format.lossy,h_933,w_933/v1488226270/agape/Profile%20Pictures/RachelKelly.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -943,3 +943,30 @@ table {
 
 
 }
+// .bio {
+// 	z-index: -1;
+// 	opacity: 0;
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 100%;
+// 	background: rgba(0,0,0,0.3);
+// 	> div {
+// 		background: #fff;
+// 		display: block;
+// 		margin: 5% auto;
+// 		max-width: 85%;
+// 		max-height: 85%;
+// 		padding: 2rem;
+// 	}
+// }
+// .bio.active {
+// 	z-index: 1;
+// 	opacity: 1;
+// }
+// .toggle-btn {
+// 	padding: 1rem;
+// 	background: blue;
+// 	cursor: pointer;
+// }
