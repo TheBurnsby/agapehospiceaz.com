@@ -30,30 +30,14 @@
 	<div class="small-12 medium-4 columns">
 		<!-- { "partial": "apps/hospice-story-side.p.html" } -->
 	</div>
-	<div class="small-12 medium-8 columns">
-		<a href="date-night/"><img class="thumbnail" src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,fl_any_format.lossy,w_600/v1489700346/agape/hospice-stories/3.jpg" alt="OpEd"></a>
-		<h3>Study Shows Benefits of Hospice Care for People with Cancer Diagnosis</h3>
-		<p>A <a href="http://ascopubs.org/doi/full/10.1200/JCO.2016.68.9257" target="_blank">recent study</a> published by the Journal of Clinical Oncology (JCO) indicates that hospice care at the end-of-life for patients suffering from a terminal cancer diagnosis improves patient satisfaction and the fulfillment of end-of-life wishes, but the benefits appear to be dependent on how long the patient actually received hospice care. <a class="read-more" href="oped/">-- Read More</a></p>
-		<hr>
-		<a href="date-night/"><img class="thumbnail" src="http://res.cloudinary.com/dbc2wlvk8/image/upload/fl_any_format.lossy/v1482442192/agape/hospice-stories/romantic-date-at-home.jpg" alt="Date Night picture"></a>
-		<h3>Date Night</h3>
-		<p>One of the core functions of a hospice is to assess and support the emotional needs of our patients and their loved ones. This is exactly what our social worker, Samira, was doing when she identified the need to plan an unforgettable date night for one of our patients, and his wife... <a class="read-more" href="date-night/">-- Read More</a></p>
-		<hr>
-		<a href="survey-week/">
-		<img class="thumbnail" src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,fl_any_format.lossy,w_500/v1482466853/agape/hospice-stories/Survey.png" alt="Survey Week picture"></a>
-		<h3>Survey Week</h3>
-		<p>Once again, Monday arrived. It was a pleasant Spring morning in Tucson, and April, our Administrator and lead Compliance Officer, was checking in online to view our account home page in the Joint Commission’s website.  After months of waiting, she finally saw a notification in the events calendar. Our surveyor... <a class="read-more" href="survey-week/">-- Read More</a></p>
-		<hr>
-		<a href="waiting/">
-		<img class="thumbnail" src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,fl_any_format.lossy,w_600/v1482447098/agape/hospice-stories/when-god-makes-us-wait.jpg" alt="Waiting picture"></a>
-		<h3>Waiting</h3>
-		<p>One of the fundamental characteristics of hospice care is openness. We believe strongly that in order to facilitate quality care and support at the end of a person’s life, we must have openness. We must have openness within our team, with the one who is dying, and with their family and loved ones... <a class="read-more" href="date-night/">-- Read More</a></p>
-		<hr>
-		<a href="team-approach/">
-		<img class="thumbnail" src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,fl_any_format.lossy,w_220/v1482466227/agape/hospice-stories/team-approach2.jpg" alt="Team Approach picture"></a>
-		<h3>The Team Approach</h3>
-		<p>It was a chilly Saturday morning and April, our Administrator, arrived at the skilled nursing home to see our patient who was entering his second day of inpatient services for his terminal agitation.</p>
-
-		<p>Terminal agitation tends to occur frequently at the end stages of a terminal disease. The main symptoms are typically agitation, sudden muscle jerks or twitching, irritability and impaired consciousness. <a class="read-more" href="team-approach/">-- Read More</a></p>
+	<div s-controller="articles" class="small-12 medium-8 columns">
+		<div s-each-article="article">
+			<div>
+				<img s-src="article.thumbnail" s-alt="article.thumbAlt" class="thumbnail">
+				<h3 s-text="article.title"></h3>
+				<div s-html="article.article | preview"></div>
+				<div s-html="more"></div>
+			</div>
+		</div>
 	</div>
 </div>
