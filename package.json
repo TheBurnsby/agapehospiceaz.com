@@ -1,0 +1,26 @@
+{
+  "name": "agapehospiceaz.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "swathe": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+	  "build": "rm -r docs/* && muleify pack src docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebCab-Design/agapehospiceaz.com.git"
+  },
+  "author": "WebCab",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/WebCab-Design/agapehospiceaz.com/issues"
+  },
+  "homepage": "https://github.com/WebCab-Design/agapehospiceaz.com#readme"
+}
