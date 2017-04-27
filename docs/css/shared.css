@@ -62,6 +62,33 @@ img {
     max-width: none;
 }
 
+video::-internal-media-controls-download-button {
+    display: none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px);
+    /* Adjust as needed */
+}
+
+.video {
+    padding: 4%;
+}
+
+.video blockquote {
+    color: rgba(0, 0, 0, 0.5);
+    font-style: italic;
+}
+
+.video blockquote a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 .float-left {
     float: left;
     margin: 0.5rem 1rem 0 0;
@@ -168,7 +195,7 @@ blockquote {
 }
 
 cite {
-    color: #e1e1e1;
+    color: #cacaca;
 }
 
 .top {
@@ -757,12 +784,12 @@ cite {
     background-position: center;
 }
 
-.profile-circle.lorraine {
+.profile-circle.stacey {
     border-radius: 50%;
     border: solid 5px #7e8b57;
     height: 75px;
     width: 75px;
-    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,g_face,h_300,w_300/v1464980786/agape/Profile%20Pictures/LorraineMoon.jpg");
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,fl_any_format.lossy,g_face,h_933,w_933/v1493331622/agape/Profile%20Pictures/StaceyWood.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -843,6 +870,16 @@ cite {
     height: 75px;
     width: 75px;
     background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,fl_any_format.lossy,h_933,w_933/v1486403288/agape/Profile%20Pictures/SusanWeber.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-circle.robP {
+    border-radius: 50%;
+    border: solid 5px #7e8b57;
+    height: 75px;
+    width: 75px;
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,fl_any_format.lossy,g_face,h_933,w_933/v1493332580/agape/Profile%20Pictures/RobPruden.jpg");
     background-size: cover;
     background-position: center;
 }
