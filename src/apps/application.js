@@ -37,12 +37,15 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
-
+	var clay = document.querySelector('.clay');
+	var paint = document.querySelector('.paint');
 	var gallery = document.querySelector('.gallery');
-	if (gallery) {
+	var clayWorkshop = 'https://res.cloudinary.com/dbc2wlvk8/image/list/clay-workshop.json';
+	var paintWorkshop = 'https://res.cloudinary.com/dbc2wlvk8/image/list/paint-workshop.json';
+	function getPhotos (feed) {
 		Astatine.ajax({
 			method: 'get',
-			action: 'https://res.cloudinary.com/dbc2wlvk8/image/list/clay-workshop.json',
+			action: feed,
 			success: function (xhr) {
 				var list = JSON.parse(xhr.response);
 				var largeImages = [];
@@ -61,30 +64,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
+	if (clay) {
+		getPhotos(clayWorkshop);
+	} else if (paint) {
+		getPhotos(paintWorkshop)
+	}
 
-		// var toggler = document.querySelectorAll('.toggle-btn');
-		// var bios = document.querySelectorAll('.bio');
-		//
-		// for (var i = 0; i < toggler.length; i++) {
-		// 	var toggle = toggler[i];
-		// 	var fullBios = bios[i];
-		// 	var closeButton = document.createElement('div');
-		//
-		// 	closeButton.classList.add('close-button');
-		// 	closeButton.innerText = "X";
-		// 	fullBios.appendChild(closeButton);
-		//
-		// 	toggle.addEventListener('click', function (){
-		// 		var currentBio = this.parentNode.nextElementSibling;
-		// 		currentBio.classList.toggle('active');
-		// 		document.body.style="overflow-y: hidden";
-		// 	});
-		//
-		// 	closeButton.addEventListener('click', function (){
-		// 		this.parentNode.classList.toggle('active');
-		// 		document.body.style="overflow-y: inherit";
-		// 	});
-		// }
 });
 
 $(document).foundation();
