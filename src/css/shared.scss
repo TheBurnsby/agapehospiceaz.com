@@ -86,6 +86,9 @@ video::-webkit-media-controls-panel {
 	float: left;
 	margin: 0.5rem 1rem 0 0;
 }
+.columns:last-child:not(:first-child) {
+    float: left;
+}
 .thumbnail{
 	margin: 1rem 0.5rem 0 0;
 }
