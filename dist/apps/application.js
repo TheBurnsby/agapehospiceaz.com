@@ -40,8 +40,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	var clay = document.querySelector('.clay');
 	var paint = document.querySelector('.paint');
 	var gallery = document.querySelector('.gallery');
+	var celebration1 = document.querySelector('.col-2017-1')
 	var clayWorkshop = 'https://res.cloudinary.com/dbc2wlvk8/image/list/clay-workshop.json';
 	var paintWorkshop = 'https://res.cloudinary.com/dbc2wlvk8/image/list/paint-workshop.json';
+	var col20171 = 'https://res.cloudinary.com/dbc2wlvk8/image/list/col2017-1.json';
 	function getPhotos (feed) {
 		Astatine.ajax({
 			method: 'get',
@@ -64,11 +66,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
-	if (clay) {
-		getPhotos(clayWorkshop);
-	} else if (paint) {
-		getPhotos(paintWorkshop)
-	}
+	if (clay) getPhotos(clayWorkshop);
+	else if (paint) getPhotos(paintWorkshop);
+	else if (celebration1) getPhotos(col20171);
 
 });
 
