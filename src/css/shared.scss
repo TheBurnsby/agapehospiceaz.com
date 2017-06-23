@@ -315,9 +315,10 @@ cite{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-}
-.head-text h1{
-	color: #fff;
+	h1{
+		color: #fff;
+		font-weight: bold;
+	}
 }
 .number-box {
 	padding: 15px;
@@ -468,6 +469,13 @@ cite{
 }
 .volunteer-wrap img{
 	max-width: 100%;
+}
+.head-bg.col2017{
+	width: 100%;
+	color: #fff;
+	height: 400px;
+	border-bottom: 15px solid $blue; /*agape blue*/
+	background: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/f_auto,b_rgb:000000,c_fill,fl_any_format.lossy,g_center,h_1000,o_59,w_1980/v1498159412/agape/col2017-1/collage.jpg') no-repeat center;
 }
 .head-bg.volunteer{
 	width: 100%;
@@ -853,7 +861,9 @@ table {
 		}
 	}
 }
-
+.e-gallery img {
+    max-height: 60px;
+}
 // Articles
 .article {
 	margin: 4.5rem auto;

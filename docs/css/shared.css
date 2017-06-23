@@ -365,6 +365,7 @@ cite {
 
 .head-text h1 {
     color: #fff;
+    font-weight: bold;
 }
 
 .number-box {
@@ -539,6 +540,15 @@ cite {
 
 .volunteer-wrap img {
     max-width: 100%;
+}
+
+.head-bg.col2017 {
+    width: 100%;
+    color: #fff;
+    height: 400px;
+    border-bottom: 15px solid #666699;
+    /*agape blue*/
+    background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/f_auto,b_rgb:000000,c_fill,fl_any_format.lossy,g_center,h_1000,o_59,w_1980/v1498159412/agape/col2017-1/collage.jpg") no-repeat center;
 }
 
 .head-bg.volunteer {
@@ -952,6 +962,10 @@ table {
 
 .bereavement-side > div img {
     width: 100%;
+}
+
+.e-gallery img {
+    max-height: 60px;
 }
 
 .article {
