@@ -1,0 +1,32 @@
+{
+	"/": "index.v.html",
+	"care-team": {
+		"/": "index.v.html",
+		"employment-inquiry": "index.v.html"
+	},
+	"how-we-do-it/volunteer": "index.v.html",
+	"how-we-do-it": {
+		"/": "index.v.html",
+		"doctor": "index.v.html",
+		"nurse": "index.v.html",
+		"cna": "index.v.html",
+		"social-services": "index.v.html",
+		"bereavement": "index.v.html",
+		"volunteer": {
+			"/": "index.v.html",
+			"volunteer-form": "index.v.html"
+		}
+	},
+	"articles": {
+		"hospice-stories": {
+			"/": "index.v.html",
+			"date-night": "index.v.html",
+			"waiting": "index.v.html",
+			"survey-week": "index.v.html",
+			"team-approach": "index.v.html"
+		}
+	},
+	"contact": "index.v.html",
+	"memorial": "index.v.html",
+	"sitemap": "index.v.html"
+}

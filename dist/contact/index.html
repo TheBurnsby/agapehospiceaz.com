@@ -7,15 +7,15 @@
 	<link rel="alternate" href="http://www.agapehospiceaz.com/" hreflang="en-us" />
 	<meta name="google-site-verification" content="Ld_zWmYUnDt_8vKJAKXgfQBcEHTlMHAgK7buLLAkNCI" />
 
-	<meta name="description" content="Memorial page for Bill Holmes, CEO of Agape Hospice.">
-	<meta name="keywords" content="memorial, bill, holmes, agape, remembering, great">
-	<meta property="og:title" content="Agape Hospice &amp; Palliative Care | Hospice Tucson Arizona" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://www.agapehospiceaz.com/" />
-	<meta property="og:image" content="http://res.cloudinary.com/dbc2wlvk8/image/upload/v1456785666/agape/agape_home_slider.jpg" />
+	<meta name="description" content="Contact Agape Hospice. Call or fill out form, get in touch.">
+	<meta name="keywords" content="contact, agape, form, map, location, phone, email">
+	<meta property="og:title" content="Contact | Agape Hospice &amp; Palliative Care" />
+	<meta property="og:type" content="image" />
+	<meta property="og:url" content="http://www.agapehospiceaz.com/contact/" />
+	<meta property="og:image" content="http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:7e8b57,c_fill,g_north,h_500,o_48,w_1920/v1460846020/Arizona-High-Resolution-Wallpapers_effoty.jpg" />
 	<meta property="og:site_name" content="Agape Hospice &amp; Palliative Care" />
 
-	<title>Sitemap | Agape Hospice</title>
+	<title>Contact | Agape Hospice &amp; Palliative Care</title>
 
 	<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
@@ -219,27 +219,228 @@
 		</header>
 
 		
-<ul>
-	<li><a href="/">Home</a></li>
-	<li><a href="care-team/">Care Team</a></li>
-	<ul>
-		<li><a href="care-team/employment-inquiry">Employment Inquiry</a></li>
-	</ul>
-	<li><a href="/how-we-do-it/volunteer">Volunteer</a></li>
-	<li><a href="how-we-do-it/">How We Do It</a></li>
-	<ul>
-		<li><a href="how-we-do-it/doctor/">Doctor</a></li>
-		<li><a href="how-we-do-it/nurse/">Nurse</a></li>
-		<li><a href="how-we-do-it/cna/">CNA</a></li>
-		<li><a href="how-we-do-it/social-service/">Social Services</a></li>
-		<li><a href="how-we-do-it/bereavement/">Bereavement</a></li>
-		<li><a href="how-we-do-it/volunteer/">Volunteer</a></li>
-			<ul>
-				<li><a href="how-we-do-it/volunteer/volunteer-form/">Volunteer Form</a></li>
-			</ul>
-		<li><a href="contact/">Contact</a></li>
-	</ul>
-</ul>
+ <style>
+ 	.head-text {
+		margin: 200px auto !important;
+	}
+ </style>
+<script>
+var marker;
+function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 32.2611219, lng: -110.8916802},
+          zoom: 12,
+		  styles: [
+				    {
+				        "featureType": "administrative",
+				        "elementType": "all",
+				        "stylers": [
+				            {
+				                "visibility": "on"
+				            },
+				            {
+				                "lightness": 33
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "landscape",
+				        "elementType": "all",
+				        "stylers": [
+				            {
+				                "color": "#f2e5d4"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "poi.park",
+				        "elementType": "geometry",
+				        "stylers": [
+				            {
+				                "color": "#c5dac6"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "poi.park",
+				        "elementType": "labels",
+				        "stylers": [
+				            {
+				                "visibility": "on"
+				            },
+				            {
+				                "lightness": 20
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "road",
+				        "elementType": "all",
+				        "stylers": [
+				            {
+				                "lightness": 20
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "road.highway",
+				        "elementType": "geometry",
+				        "stylers": [
+				            {
+				                "color": "#94729c"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "road.arterial",
+				        "elementType": "geometry",
+				        "stylers": [
+				            {
+				                "color": "#e4d7c6"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "road.local",
+				        "elementType": "geometry",
+				        "stylers": [
+				            {
+				                "color": "#f5f5f5"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "water",
+				        "elementType": "all",
+				        "stylers": [
+				            {
+				                "visibility": "on"
+				            },
+				            {
+				                "color": "#acbcc9"
+				            }
+				        ]
+				    }
+				]
+
+        });
+	  marker = new google.maps.Marker({
+		 map: map,
+		 draggable: false,
+		 animation: google.maps.Animation.DROP,
+		 position: {lat: 32.2611219, lng: -110.8916802}
+	   });
+	   marker.addListener('click', toggleBounce);
+	 }
+	 function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+          marker.setAnimation(null);
+        } else {
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
+    </script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrvHLBdu_hapJz34fD32YSuY4r2UxO120&callback=initMap"async defer></script>
+<style>
+ #map {
+	 height: 400px;
+	 width: 100%;
+ }
+ .location {
+	 text-align: center;
+ }
+</style>
+
+<div class="head-bg contact">
+	<a href="tel:5202075817">
+<div class="number-box">
+	<p>- Call Now-</p>
+	<h3>520-207-5817</h3>
+	<p>- Tucson, Arizona -</p>
+</div></a>
+
+	<!-- Background image of the team?? -->
+	<div class="head-text hide-for-small-only">
+		<h1>Contact Agape Hospice</h1>
+		<div class="">
+			<blockquote>"If you are brave enough to say goodbye, life will reward you with a new hello."<br />
+			<cite>PAULO COELHO</cite></blockquote>
+		</div>
+	</div>
+</div>
+<div class="arrow contact">
+</div>
+<div class="contact">
+	<div class="contact-form">
+		<div class="row">
+			<div class="small-12 medium-8 columns">
+				<form class="form">
+				<input type="hidden" name="*cc" value="sburns@agapehospiceaz.com" />
+					<div class="row">
+						<div class="medium-6 columns">
+							<label>First Name <small>required</small>
+								<input type="text" name="contact_first_name" placeholder="first name" required/>
+							</label>
+						</div>
+						<div class="medium-6 columns">
+							<label>Last Name <small>required</small>
+								<input type="text" name="contact_last_name" placeholder="last name" required/>
+							</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="medium-4 columns">
+							<label>Phone Number
+								<input type="text" name="contact_phone" placeholder="your number" />
+							</label>
+						</div>
+						<div class="medium-4 columns">
+							<label>Email <small>required</small>
+								<input type="text" name="contact_email" placeholder="email" required/>
+							</label>
+						</div>
+						<div class="medium-4 columns">
+							<label>Subject <small>required</small>
+								<input type="text" name="contact_subject" placeholder="e.g. Hospice Services..." required/>
+							</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-12 columns">
+							<label>Message <small>required</small>
+								<textarea name="contact_message" placeholder="your message" required></textarea>
+							</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-12 columns">
+							<div class="submit-button">
+								<input type="hidden" name="*formname" value="Main Contact">
+								<input class="button purple" type="submit" value="Submit">
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="response"></div>
+			</div>
+			<div class="contact-numbers">
+				<div class="small-12 medium-4 columns">
+					<h4>Some Details</h4>
+					<hr>
+					<p><a href="/">Agape Hospice</a> is here to help. We can provide services to meet your needs and circumstances. If you want immediate assistance, please call us at 520.207.5817. Our clinical staff is available 24/7 and our office hours are <strong>Monday - Friday 8:30am - 4:30pm.</strong> Otherwise, please fill out the form below and we will contact you within 24 hours.</p>
+					<p><strong>Tel:</strong>&nbsp;<a href="tel:5202075817">520.207.5817</a></p>
+					<p><strong>Fax:</strong>&nbsp;520.207.6507</p>
+					<p><strong>Email:</strong>&nbsp;<a href="mailto:info@agapehospiceaz.com">info@agapehospiceaz.com</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row location">
+	<h3>Our Office Location</h3>
+	<p>Below is an interactive map to our main office location.</p>
+</div>
+<div id="map"></div>
 
 	</main>
 	<footer>
