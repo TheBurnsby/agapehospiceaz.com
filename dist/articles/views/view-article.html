@@ -1,0 +1,40 @@
+
+<template>
+	<div class="row">
+		<div class="small-12 columns">
+			<a class="read-more" href="/"><i class="fa fa-backward" aria-hidden="true"></i> Back to Hospice Stories</a>
+			<h1 j-text="title"></h1>
+			<div j-html="article">
+			</div>
+		</div>
+	</div>
+
+
+</template>
+
+<script>
+	Jenie.component({
+		name: 'view-article',
+		template: 'template',
+		model: {},
+		attached: function () {
+			var self = this;
+			var thisArticle = Jenie.module.import('getArticle')();
+			var keywords = document.querySelector('meta[name="keywords"]');
+			var description = document.querySelector('meta[name="description"]');
+			var ogImage = document.querySelector('meta[property="og:image"]');
+			var ogTitle = document.querySelector('meta[property="og:title"]');
+
+			self.model.set('title', thisArticle.title);
+			self.model.set('article', thisArticle.article);
+
+			console.log(thisArticle.keywords);
+
+			keywords.content = thisArticle.keywords;
+			description.content = thisArticle.description;
+			ogImage.content = thisArticle.thumbnail;
+			ogTitle.content = thisArticle.title + ' | ' + ' Hospice Story';
+			document.title = thisArticle.title + ' | ' + ' Hospice Story';
+		}
+	});
+</script>

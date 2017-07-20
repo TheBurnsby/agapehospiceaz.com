@@ -42,8 +42,6 @@
 	<link rel="stylesheet" type="text/css" href="/css/shared.css">
 	<link rel="shortcut icon" href="/favicon.ico" />
 
-	<script src="/apps/articles.js"></script>
-	<script src="/apps/swathe.min.js"></script>
 	<script type="text/javascript" src="/apps/nav-bar.min.js"></script>
 </head>
 
@@ -219,11 +217,29 @@
 		</header>
 
 		
+
+<script src="/apps/jenie.polly.min.js"></script>
+<script src="/articles/articles.js"></script>
+
+<link rel="import" href="/articles/views/view-home.html">
+<link rel="import" href="/articles/views/view-article.html">
+
 <style>
 	.thumbnail {
 		width: 100%;
 		max-height: 400px;
 		max-width: 400px;
+	}
+	.inline-img {
+		float: left;
+		margin-right: 1rem;
+		max-width: 300px;
+	}
+	.inline-img-right {
+		float: right;
+		margin-left: 1rem;
+		max-height: 300px;
+		max-width: 300px;
 	}
 </style>
 <div class="head-bg">
@@ -238,29 +254,44 @@
 </div>
 <div class="arrow">
 </div>
-<div class="row">
-	<div class="small-12 medium-4 columns">
-		<ul class="side-menu">
-	<h3>More Stories</h3>
-	<li><a href="/articles/hospice-stories/oped/">Study Shows Benefits of Hospice Care for People with Cancer Diagnosis</a></li>
-	<li><a href="/articles/hospice-stories/date-night/">Date Night</a></li>
-	<li><a href="/articles/hospice-stories/survey-week/">Survey Week</a></li>
-	<li><a href="/articles/hospice-stories/waiting/">Waiting</a></li>
-	<li><a href="/articles/hospice-stories/team-approach/">The Team Approach</a></li>
-</ul>
 
-	</div>
-	<div s-controller="articles" class="small-12 medium-8 columns">
-		<div s-each-article="article">
-			<div>
-				<img s-src="article.thumbnail" s-alt="article.thumbAlt" class="thumbnail">
-				<h3 s-text="article.title"></h3>
-				<div s-html="article.article | preview"></div>
-				<div s-html="more"></div>
-			</div>
-		</div>
-	</div>
-</div>
+<j-view></j-view>
+
+<script>
+
+	Jenie.module.export('getArticle', function () {
+		return function () {
+			var path = Jenie.router.state.url.path;
+			var articles = Jenie.module.import('articleModel').articles;
+			for (var i = 0; i < articles.length; i++) {
+				var article = articles[i];
+				if (path === article.link) {
+					return article;
+				}
+			}
+		}
+	});
+
+	Jenie.router.listen({
+		hash: true,
+		base: '/articles',
+		contain: true,
+		external: function (path) {
+			return /(^www)|(^http)/.test(path);
+		},
+		routes: [
+			{
+				title: 'Hospice Stories | Agape Hospice &amp; Palliative Care',
+				path: '/',
+				component: 'view-home'
+			},
+			{
+				path: /.*/,
+				component: 'view-article'
+			}
+		]
+	});
+</script>
 
 	</main>
 	<footer>

@@ -141,6 +141,11 @@ nav {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 }
+.read-more {
+	&:hover {
+		text-decoration: underline;
+	}
+}
 /*Nav ENd*/
 .button:focus {
 	outline: none;

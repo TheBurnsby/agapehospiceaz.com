@@ -1,0 +1,84 @@
+<!-- {
+	"title": "Hospice Stories | Articles | Agape Hospice &amp; Palliative Care",
+ 	"metaDescription": "Stories told from the hospice team and patient perspective. Expect to laugh, cry, and be inspired.",
+	"metaKeywords": "hospice, story, stories, cry, laugh, agape, tucson, end of life",
+	"ogTitle": "Hospice Stories | Agape Hospice Story",
+	"ogType": "website",
+	"ogUrl": "http://www.agapehospiceaz.com/articles/hospice-stories/",
+	"ogImage": "http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:000,fl_any_format.lossy,o_66/v1482442604/agape/hospice-stories/hospice-story-head.jpg"
+} -->
+
+<script src="/apps/jenie.polly.min.js"></script>
+<script src="/articles/articles.js"></script>
+
+<link rel="import" href="/articles/views/view-home.html">
+<link rel="import" href="/articles/views/view-article.html">
+
+<style>
+	.thumbnail {
+		width: 100%;
+		max-height: 400px;
+		max-width: 400px;
+	}
+	.inline-img {
+		float: left;
+		margin-right: 1rem;
+		max-width: 300px;
+	}
+	.inline-img-right {
+		float: right;
+		margin-left: 1rem;
+		max-height: 300px;
+		max-width: 300px;
+	}
+</style>
+<div class="head-bg">
+	<!-- Background image of the team?? -->
+	<div class="head-text">
+		<h1>Hospice Stories</h1>
+		<div class="hide-for-small-only">
+			<p></p>
+		</div>
+	</div>
+	<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:000,fl_any_format.lossy,o_66/v1482442604/agape/hospice-stories/hospice-story-head.jpg" alt="Hospice stories head">
+</div>
+<div class="arrow">
+</div>
+
+<j-view></j-view>
+
+<script>
+
+	Jenie.module.export('getArticle', function () {
+		return function () {
+			var path = Jenie.router.state.url.path;
+			var articles = Jenie.module.import('articleModel').articles;
+			for (var i = 0; i < articles.length; i++) {
+				var article = articles[i];
+				if (path === article.link) {
+					return article;
+				}
+			}
+		}
+	});
+
+	Jenie.router.listen({
+		hash: true,
+		base: '/articles',
+		contain: true,
+		external: function (path) {
+			return /(^www)|(^http)/.test(path);
+		},
+		routes: [
+			{
+				title: 'Hospice Stories | Agape Hospice &amp; Palliative Care',
+				path: '/',
+				component: 'view-home'
+			},
+			{
+				path: /.*/,
+				component: 'view-article'
+			}
+		]
+	});
+</script>
