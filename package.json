@@ -7,8 +7,7 @@
     "doc": "docs"
   },
   "dependencies": {
-    "jenie": "^1.2.10",
-    "swathe": "^2.0.2"
+    
   },
   "devDependencies": {},
   "scripts": {
