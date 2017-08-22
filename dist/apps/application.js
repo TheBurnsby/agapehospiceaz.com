@@ -1,13 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-	$('.sliderA').slick({
-		dots: true,
-		slidesToShow: 1,
-		speed: 1000,
-		adaptiveHeight: true,
-		autoplay: true,
-		autoplaySpeed: 5000,
-		arrows: false
-	});
 	var form = document.querySelector('.form');
 	if (form) {
 		Astatine.submit({
