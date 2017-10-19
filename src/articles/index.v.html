@@ -7,12 +7,8 @@
 	"ogUrl": "http://www.agapehospiceaz.com/articles/hospice-stories/",
 	"ogImage": "https://res.cloudinary.com/dbc2wlvk8/image/upload/f_auto,fl_any_format.lossy/v1482442604/agape/website-imgs/hospice-story-head.jpg"
 } -->
-
-<script src="/apps/jenie.polly.min.js"></script>
-<script src="/articles/articles.js"></script>
-
-<link rel="import" href="/articles/views/view-home.html">
-<link rel="import" href="/articles/views/view-article.html">
+<script src="/articles/oxe.polly.min.js" defer></script>
+<script src="/articles/index.js" defer></script>
 
 <style>
 	.thumbnail {
@@ -45,40 +41,6 @@
 <div class="arrow">
 </div>
 
-<j-view></j-view>
-
-<script>
-
-	Jenie.module.export('getArticle', function () {
-		return function () {
-			var path = Jenie.router.state.url.path;
-			var articles = Jenie.module.import('articleModel').articles;
-			for (var i = 0; i < articles.length; i++) {
-				var article = articles[i];
-				if (path === article.link) {
-					return article;
-				}
-			}
-		}
-	});
-
-	Jenie.router.listen({
-		hash: true,
-		base: '/articles',
-		contain: true,
-		external: function (path) {
-			return /(^www)|(^http)/.test(path);
-		},
-		routes: [
-			{
-				title: 'Hospice Stories | Agape Hospice &amp; Palliative Care',
-				path: '/',
-				component: 'view-home'
-			},
-			{
-				path: /.*/,
-				component: 'view-article'
-			}
-		]
-	});
-</script>
+<div class="o-root">
+	<o-view></o-view>
+</div>
