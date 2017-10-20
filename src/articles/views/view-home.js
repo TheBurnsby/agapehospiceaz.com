@@ -8,9 +8,6 @@ Oxe.component.define({
 			return data.match(/.*?\s/g).slice(0, 50).join('') + ' ...';
 		}
 	},
-	created: function () {
-		console.log(this.model);
-	},
 	html: `
 	<div class="row">
 		<div class="small-12 medium-4 columns">

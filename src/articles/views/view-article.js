@@ -5,9 +5,10 @@ Oxe.component.define({
 	name: 'view-article',
 	model: {
 		title: '',
-		article: ''
-	},
-	created: function () {
+		article: '',
+		keywords: '',
+		description: '',
+		thumbnail: ''
 	},
 	attached: function () {
 		var self = this;
@@ -22,7 +23,8 @@ Oxe.component.define({
 		ogImage.content = self.model.thumbnail;
 		ogTitle.content = self.model.title + ' | ' + ' Hospice Story';
 		document.title = self.model.title + ' | ' + ' Hospice Story';
-		console.log(article);
+		console.log(ogTitle);
+
 		self.model.title = article.title;
 		self.model.article = article.article;
 
