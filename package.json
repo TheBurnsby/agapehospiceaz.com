@@ -7,13 +7,13 @@
     "doc": "docs"
   },
   "dependencies": {
-    "oxe": "^1.10.0"
+    "oxe": "^1.10.1"
   },
   "devDependencies": {},
   "scripts": {
     "build": "rm -r docs/* && muleify pack src docs",
     "serve": "muleify serve -w src dist",
-	"cpo": "cp node_modules/oxe/dist/oxe.polly.min.js src/apps/."
+    "cpo": "cp node_modules/oxe/dist/oxe.polly.min.js src/apps/."
   },
   "repository": {
     "type": "git",

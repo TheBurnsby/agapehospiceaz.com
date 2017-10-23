@@ -18,15 +18,14 @@ Oxe.component.define({
 		var ogImage = document.querySelector('meta[property="og:image"]');
 		var ogTitle = document.querySelector('meta[property="og:title"]');
 
+		self.model.title = article.title;
+		self.model.article = article.article;
+
 		keywords.content = self.model.keywords;
 		description.content = self.model.description;
 		ogImage.content = self.model.thumbnail;
 		ogTitle.content = self.model.title + ' | ' + ' Hospice Story';
 		document.title = self.model.title + ' | ' + ' Hospice Story';
-		console.log(ogTitle);
-
-		self.model.title = article.title;
-		self.model.article = article.article;
 
 	},
 	html: `

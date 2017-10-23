@@ -5,7 +5,7 @@ var allArticles = Articles.sections;
 
 export default function getArticle () {
 	var link = Oxe.router.location.pathname;
-	console.log(link);
+	// console.log(link);
 	link = isHash ? '#' + link: link;
 	for (var i = 0, l = allArticles.length; i < l; i++) {
 		if (allArticles[i].link === link) {

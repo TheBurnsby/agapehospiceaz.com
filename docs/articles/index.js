@@ -15,6 +15,7 @@ Oxe.setup({
 				url: '/articles/views/view-home.js'
 			},
 			{
+				title: '',
 				path: '/{*}',
 				component: 'view-article',
 				url: '/articles/views/view-article.js'
