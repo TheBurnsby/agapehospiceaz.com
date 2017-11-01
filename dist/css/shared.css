@@ -373,7 +373,7 @@ cite {
   margin: 1rem auto;
 }
 .insurance img {
-  height: 100px;
+  max-height: 100px;
   display: inline-block;
 }
 .bg-image {

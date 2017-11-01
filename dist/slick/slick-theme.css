@@ -149,20 +149,20 @@
   color: black;
   opacity: 0.75;
 }
-center;
-
-    opacity: .25;
-    color: black;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+: auto;
+    }
+    &:before {
+        content: $slick-next-character;
+        [dir="rtl"] & {
+            content: $slick-prev-character;
+        }
+    }
 }
-.slick-dots li.slick-active button:before
-{
-    opacity: .75;
-    color: black;
-}
-tom: 30px;
+
+/* Dots */
+
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
 }
 
 .slick-dots {
