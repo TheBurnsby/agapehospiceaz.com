@@ -20,6 +20,7 @@ Oxe.component.define({
 
 		self.model.title = article.title;
 		self.model.article = article.article;
+		self.model.thumbnail = article.thumbnail;
 
 		keywords.content = self.model.keywords;
 		description.content = self.model.description;
