@@ -62,5 +62,3 @@ document.addEventListener('DOMContentLoaded', function () {
 	else if (celebration1) getPhotos(col20171);
 
 });
-
-$(document).foundation();

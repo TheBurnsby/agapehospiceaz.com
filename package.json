@@ -11,7 +11,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "rm -r docs/* && muleify pack src docs",
+    "build": "rm -r docs/* && muleify pack -m src docs",
     "serve": "muleify serve -w src dist",
     "cpo": "cp node_modules/oxe/dist/oxe.polly.min.js src/apps/."
   },
