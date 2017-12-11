@@ -31,7 +31,7 @@ Oxe.component.define({
 	},
 	html: `
 	<div class="row">
-		<div class="small-12 columns">
+		<div class="col-xs-12">
 			<a class="read-more" href="/"><i class="fa fa-backward" aria-hidden="true"></i> Back to Hospice Stories</a>
 			<h1 o-text="title"></h1>
 			<div o-html="article"></div>

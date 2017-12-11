@@ -62,3 +62,150 @@ document.addEventListener('DOMContentLoaded', function () {
 	else if (celebration1) getPhotos(col20171);
 
 });
+
+var marker;
+function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 32.2611219, lng: -110.8916802},
+          zoom: 12,
+		  styles: [
+				    {
+				        "featureType": "administrative",
+				        "elementType": "all",
+				        "stylers": [
+				            {
+				                "visibility": "on"
+				            },
+				            {
+				                "lightness": 33
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "landscape",
+				        "elementType": "all",
+				        "stylers": [
+				            {
+				                "color": "#f2e5d4"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "poi.park",
+				        "elementType": "geometry",
+				        "stylers": [
+				            {
+				                "color": "#c5dac6"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "poi.park",
+				        "elementType": "labels",
+				        "stylers": [
+				            {
+				                "visibility": "on"
+				            },
+				            {
+				                "lightness": 20
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "road",
+				        "elementType": "all",
+				        "stylers": [
+				            {
+				                "lightness": 20
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "road.highway",
+				        "elementType": "geometry",
+				        "stylers": [
+				            {
+				                "color": "#94729c"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "road.arterial",
+				        "elementType": "geometry",
+				        "stylers": [
+				            {
+				                "color": "#e4d7c6"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "road.local",
+				        "elementType": "geometry",
+				        "stylers": [
+				            {
+				                "color": "#f5f5f5"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "water",
+				        "elementType": "all",
+				        "stylers": [
+				            {
+				                "visibility": "on"
+				            },
+				            {
+				                "color": "#acbcc9"
+				            }
+				        ]
+				    }
+				]
+
+        });
+	  marker = new google.maps.Marker({
+		 map: map,
+		 draggable: false,
+		 animation: google.maps.Animation.DROP,
+		 position: {lat: 32.2611219, lng: -110.8916802}
+	   });
+	   marker.addListener('click', toggleBounce);
+	 }
+	 function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+          marker.setAnimation(null);
+        } else {
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
+
+var bioToggles = document.querySelectorAll('.bio-toggle');
+var bios = document.querySelectorAll('.bio');
+
+function openBio () {
+	for (var i = 0; i < bioToggles.length; i++) {
+		var toggle = bioToggles[i];
+
+		var closeBtn = document.createElement('div');
+		var x = document.createElement('i');
+		closeBtn.setAttribute('class', 'button close');
+		x.setAttribute('class', 'material-icons');
+		x.innerText = 'close';
+		closeBtn.appendChild(x);
+
+		toggle.addEventListener('click', function () {
+			var thisBio = this.nextSibling.nextSibling;
+			thisBio.appendChild(closeBtn);
+			thisBio.classList.toggle('active');
+			document.body.setAttribute('style', 'overflow-y: hidden');
+		});
+		
+		closeBtn.addEventListener('click', function () {
+			var thisBio = this.parentNode;
+			thisBio.classList.toggle('active');
+			document.body.removeAttribute('style');
+
+		});
+
+	}
+}
+openBio();

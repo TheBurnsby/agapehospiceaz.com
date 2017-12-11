@@ -13,12 +13,11 @@
 	-ms-transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
 	-webkit-transition: all 300ms ease;
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Exo", sans-serif;
 }
 body {}
 h1, h2, h3, h4, h5, h6 {
 	color: @primary;
-	font-family: "Exo", sans-serif;
 }
 h1 {
 	font-weight: 700;
@@ -55,7 +54,6 @@ p, td, li {
 	font-size: 1.1rem;
 	margin-bottom: 1em;
 	line-height: 1.375rem;
-	font-family: "Exo", sans-serif;
 }
 strong {
 	font-size: 1.1rem;
@@ -64,8 +62,7 @@ ul, ol, li {
 	margin-left: 1rem;
 	font-weight: 100;
 	font-size: 1.1rem;
-	line-height: 1.375rem;
-	font-family: "Exo", sans-serif;
+	line-height: 1.375;
 }
 a, a:link, a:visited, a:focus, a:hover {
 	outline: none;
@@ -171,13 +168,12 @@ nav {
 	}
 }
 
-blockquote{
+blockquote {
 	color: #fff;
 }
-cite{
-	color: #cacaca;
+cite {
+	color: @light-grey;
 }
-
 
 //Globals
 .row {
@@ -217,8 +213,95 @@ cite{
 img {
 	width: 100%;
 }
+.number-box {
+	padding: 15px;
+	margin:0 1rem auto;
+	position: absolute;
+	top: 0;
+	right: 3%;
+	text-align: center;
+	border-radius: 0 0 4px 4px;
+	background: rgba(255,255,255,0.7);
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+	p, h3 {
+		margin-bottom: 0;
+		font-weight: 700;
+	}
+}
+.thumbnail {
+	border: 1px solid @primary;
+	padding: 3px;
+}
+
+//sliders
+.testimonial {
+	// min-height: 250px;
+	padding: 2rem;
+	background: url("https://res.cloudinary.com/dbc2wlvk8/image/upload/f_auto,fl_any_format.lossy/v1482277334/agape/website-imgs/testimonials.jpg");
+	> div {
+		box-sizing: border-box;
+		text-align: center;
+		color: white;
+		margin: 2rem;
+	}
+}
+.main-slider {
+	min-height: 400px;
+	padding: 2rem;
+	background: url("https://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,f_auto,fl_any_format.lossy,g_north,h_600,w_1920/v1456785666/agape/website-imgs/agape_home_slider.jpg");
+	> div {
+		box-sizing: border-box;
+		// text-align: center;
+		color: white;
+		margin: 2rem;
+	}
+
+}
 
 
+//buttons
+.button {
+	display: inline-block;
+	margin: 1rem auto;
+	padding: 0.75rem;
+	cursor: pointer;
+	&.primary {
+		background-color: @primary;
+		color: white;
+		font-weight: 100;
+	}
+	&.h-primary {
+
+	}
+	&.white {
+
+	}
+	&.h-white {
+		border: 2px solid white;
+		color: white;
+		&:hover {
+			background-color: fade(white, 10%);
+		}
+	}
+	&.close {
+		position: absolute;
+		top: 0;
+		right: 5%;
+	}
+}
+
+
+//Forms
+form {
+	input[type='text'], textarea {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 1rem;
+		border: none;
+		border-bottom: 1px solid @black;
+		margin: 0.5rem auto;
+	}
+}
 .circle-icon {
 	width: 10rem;
 	height: 10rem;
@@ -241,7 +324,7 @@ img {
 		transform: translate(-50%, -50%);
 	}
 }
-.head-bg{
+.head-bg {
 	width: 100%;
 	color: #fff;
 	height: 400px;
@@ -257,7 +340,7 @@ img {
 	    position: absolute;
 	}
 	> div {
-		margin: 75px auto;
+		margin: 5% auto;
 		max-width: 1000px;
 		margin-left: auto;
 		margin-right: auto;
@@ -265,18 +348,6 @@ img {
 		h1{
 			color: #fff;
 			font-weight: bold;
-		}
-	}
-}
-.slider {
-	> div {
-		text-align: center;
-		padding-top: 100px;
-		p {
-			color: #fff;
-			font-size: 1.6rem;
-			line-height: 1.9rem;
-			text-shadow: 1px 2px #333;
 		}
 	}
 }
@@ -314,11 +385,6 @@ img {
 		max-height: 100px;
 		display: inline-block;
 	}
-}
-.bg-image{
-	width: 100%;
-	height: 350px;
-	background: url("https://res.cloudinary.com/dbc2wlvk8/image/upload/f_auto,fl_any_format.lossy/v1482277334/agape/website-imgs/testimonials.jpg");
 }
 .upper-foot {
 	background: @light-grey;
@@ -377,13 +443,23 @@ img {
 	display: block;
 	position: fixed;
 	background-color: white;
+    box-shadow: 0px 0px 50px 2px #000;
 	top: 50%;
 	left: 50%;
 	padding: 1.6rem;
-	width: 80%;
-	height: 80%;
+	width: 50%;
 	transform: translate(-50%, -50%);
 	overflow-y: auto;
+}
+.bio-toggle {
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	background-color: @green;
+	color: white;
+	border: none;
+	border-radius: 0;
 }
 .staff-title{
 	color: #fff;
@@ -445,30 +521,22 @@ img {
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
 }
-.image img {
-	max-width: 100% !important;
+.image {
+	display: grid;
 }
-.reveal:focus{
+.reveal:focus {
 	outline: none;
 }
 
 .profile-circle {
 	border-radius: 50%;
-	border: solid 5px #7e8b57;
-	height: 150px;
-	width: 150px;
+	border: solid 5px @blue;
+	height: 125px;
+	width: 125px;
 	margin: auto;
-	&.nurse {
-		background:url('https://res.cloudinary.com/dbc2wlvk8/image/upload/f_auto,fl_any_format.lossy/c_fill,g_face,h_933,w_933/v1464980783/agape/Profile%20Pictures/KimHenry.jpg');
-	}
-	&.bereavement {
-		background:url('https://res.cloudinary.com/dbc2wlvk8/image/upload/f_auto,fl_any_format.lossy,c_fill,g_faces,h_500,w_500/v1464983424/agape/Profile%20Pictures/BelindaBrauer.jpg');
-	}
-	&.physician {
-		background:url('https://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,f_auto,fl_any_format.lossy,w_500/v1488226270/agape/Profile%20Pictures/RachelKelly.jpg');
-	}
-	&.social-service {
-		background:url('https://res.cloudinary.com/dbc2wlvk8/image/upload/f_auto,c_fill,e_auto_saturation,fl_any_format.lossy,g_face,h_933,w_933/v1496253205/agape/Profile%20Pictures/IMG_4580.jpg');
+	&.sm {
+		height: 75px;
+		width: 75px;
 	}
 	&.volunteer {
 		background:url('https://res.cloudinary.com/dbc2wlvk8/image/upload/f_auto,fl_any_format.lossy,c_fill,e_brightness:20,g_face,h_300,w_300/v1456786991/agape/administrative-volunteer.png');
@@ -476,22 +544,11 @@ img {
 	&.cna {
 		background:url('https://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,f_auto,fl_any_format.lossy,g_faces,h_300,w_300/v1494780212/agape/Profile%20Pictures/MariaCirerol.jpg');
 	}
-
-	background-size: cover !important;
-	background-position: center !important;
-}
-/*CARE TEAM PROFILES*/
-
-.profile-circle {
-	border-radius: 50%;
-	border: solid 5px #7e8b57;
-	height: 75px;
-	width: 75px;
 	&.tammy {
 		background: url("https://res.cloudinary.com/dbc2wlvk8/image/upload/f_auto,fl_any_format.lossy,c_fill,g_face:center,h_500,w_500/v1464980789/agape/Profile%20Pictures/TammyBurns.jpg");
 	}
 	&.sam {
-		background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/f_auto,fl_any_format.lossy,c_fill,g_face,h_300,w_300/v1466196957/agape/Profile%20Pictures/SamBurns.png");
+		background: url("https://res.cloudinary.com/dbc2wlvk8/image/upload/f_auto,fl_any_format.lossy,c_fill,g_face,h_300,w_300/v1466196957/agape/Profile%20Pictures/SamBurns.png");
 	}
 	&.richard {
 		background: url("https://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,f_auto,fl_any_format.lossy,g_face,h_300,w_300/v1499444781/agape/Profile%20Pictures/RichardLubke.jpg");
@@ -541,8 +598,9 @@ img {
 	&.robP {
 		background: url("https://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,f_auto,fl_any_format.lossy,g_face,h_933,w_933/v1493332580/agape/Profile%20Pictures/RobPruden.jpg");
 	}
-	background-size: cover;
-    background-position: center;
+
+	background-size: cover !important;
+	background-position: center !important;
 }
 .inquiry-text {
 	padding: 1rem;
@@ -577,41 +635,4 @@ table {
 // Articles
 .article {
 	margin: 4.5rem auto;
-}
-/* Small screens  */
-@media only screen and (max-width: 640px) {
-	.arrow.contact{
-		left: 50%;
-	}
-
-	h4 {
-		font-size: 1.6rem;
-	}
-
-}
-
-/* Medium screens */
-@media only screen and (max-width: 1024px) {
-
-
-}
-
-/* Small screens */
-
-@media only screen and (max-width: 600px) {
-
-	.logo {
-		top: 48px;
-		right: 1rem;
-		left: initial;
-		// height: 80px;
-	}
-	.logo > a > svg {
-    	height: 80px;
-	}
-
-	.float-left img {
-		max-width: 100%;
-		margin:0;
-	}
 }

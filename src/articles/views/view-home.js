@@ -10,7 +10,7 @@ Oxe.component.define({
 	},
 	html: `
 	<div class="row">
-		<div class="small-12 medium-4 columns">
+		<div class="col-xs-12 col-sm-4">
 			<ul class="side-menu">
 				<h3>More Stories</h3>
 				<li><a href="/a-non-medical-hospice-intervention">A Non Medical Hospice Intervention</a></li>
@@ -21,9 +21,8 @@ Oxe.component.define({
 				<li><a href="/waiting">Waiting</a></li>
 				<li><a href="/team-approach">The Team Approach</a></li>
 			</ul>
-
 		</div>
-		<div o-each-section="sections" class="small-12 medium-8 columns">
+		<div o-each-section="sections" class="col-xs-12 col-sm-8">
 			<div>
 				<a o-href="section.link">
 				<img o-src="section.thumbnail" o-alt="section.thumbAlt" class="thumbnail"></a>
