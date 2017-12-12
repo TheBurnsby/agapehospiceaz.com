@@ -65,12 +65,13 @@ ul, ol, li {
 	line-height: 1.375;
 }
 a, a:link, a:visited, a:focus, a:hover {
-	outline: none;
+	// outline: none;
 	color: @primary;
 	text-decoration: none;
 }
 a:hover {
 	cursor: pointer;
+
 }
 
 video::-internal-media-controls-download-button {
@@ -255,7 +256,9 @@ img {
 		color: white;
 		margin: 2rem;
 	}
-
+	h2, p {
+		text-shadow: 1px 1px 1px #000;
+	}
 }
 
 
@@ -271,7 +274,11 @@ img {
 		font-weight: 100;
 	}
 	&.h-primary {
-
+		border: 2px solid @primary;
+		color: @primary;
+		&:hover {
+			background-color: fade(@primary, 10%);
+		}
 	}
 	&.white {
 
