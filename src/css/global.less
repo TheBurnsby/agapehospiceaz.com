@@ -49,7 +49,7 @@ hr {
     height: 0;
     margin: 1rem 0 1rem;
 }
-p, td, li {
+p, td, li, a {
 	font-weight: 100;
 	font-size: 1.1rem;
 	margin-bottom: 1em;
@@ -123,6 +123,7 @@ video::-webkit-media-controls-panel {
 	box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
 }
 .logo > a {
+	margin: 0;
 	display: block;
 }
 /*Menu Bar*/
@@ -153,6 +154,9 @@ nav {
 }
 .nav-list-sub li:nth-child(1) {
 	font-weight: bold !important;
+}
+.nav-icon-menu-wrap {
+	left: 86%;
 }
 
 .side-menu li{
@@ -268,12 +272,14 @@ img {
 	margin: 1rem auto;
 	padding: 0.75rem;
 	cursor: pointer;
+	font-size: 1rem;
 	&.primary {
 		background-color: @primary;
 		color: white;
 		font-weight: 100;
 	}
 	&.h-primary {
+		background-color: transparent;
 		border: 2px solid @primary;
 		color: @primary;
 		&:hover {
@@ -347,10 +353,10 @@ form {
 	    position: absolute;
 	}
 	> div {
+		padding-left: 3vw;
+		padding-right: 3vw;
 		margin: 5% auto;
 		max-width: 1000px;
-		margin-left: auto;
-		margin-right: auto;
 		text-align: center;
 		h1{
 			color: #fff;
@@ -642,4 +648,7 @@ table {
 // Articles
 .article {
 	margin: 4.5rem auto;
+}
+footer {
+	overflow-x: hidden;
 }
